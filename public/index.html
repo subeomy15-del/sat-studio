@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f4ef">
+  <meta name="description" content="Your personal SAT study space. Learn with an AI tutor, make custom quizzes, and turn mistakes into progress.">
+  <title>Margin — your SAT study space</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/vendor/katex/katex.min.css">
+  <script defer src="/vendor/markdown-it.min.js"></script>
+  <script defer src="/vendor/katex/katex.min.js"></script>
+  <script defer src="/vendor/katex/contrib/auto-render.min.js"></script>
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <aside class="sidebar" aria-label="Main navigation">
+    <a class="brand" href="#home"><span class="brand-mark">m<span>·</span></span><span>margin<span class="brand-dot">.</span></span></a>
+    <div class="workspace-label">YOUR STUDY SPACE</div>
+    <nav id="navigation"></nav>
+    <div class="sidebar-note"><span class="note-star">✳</span><p>A little progress.<br>Every single day.</p><span>Make room for what’s next.</span></div>
+    <button class="connection-card" id="connection-button"><span class="status-dot"></span><span><strong id="connection-title">Connecting tutor</strong><small id="connection-sub">Checking your local AI</small></span><span>↗</span></button>
+    <div class="sidebar-footer"><div class="avatar">Y</div><div>Your workspace<small>Saved on this browser</small></div></div>
+  </aside>
+  <div class="app-shell">
+    <header class="topbar"><div class="breadcrumb">Workspace <span>/</span> <strong id="page-name">Overview</strong></div><div class="topbar-right"><span class="local-badge">◉ <span>Personal workspace</span></span><button class="icon-button" id="settings-button" aria-label="Connection and settings">⚙</button></div></header>
+    <main id="main" tabindex="-1"></main>
+    <footer class="app-footer"><span>Built for your next breakthrough.</span><span>Independent SAT practice · Not affiliated with College Board</span></footer>
+  </div>
+  <dialog id="settings-dialog"><button class="dialog-close icon-button" aria-label="Close settings">×</button><div class="eyebrow">YOUR CONNECTION</div><h2>Meet your study partner.</h2><p id="settings-status">Checking your AI connection…</p><div class="settings-info"><strong>Private by default</strong><p>With browser AI, your questions are processed on this device. Chats, quiz results, and lesson progress are saved in this browser.</p><strong>A tutor, with a little perspective</strong><p>AI can make mistakes. Check important answers against your official explanations. Generated quizzes are original practice, not official College Board questions.</p></div><section class="progress-backup"><h3>Keep your progress</h3><p>Download a backup to keep your notes, attempts, and study history or move them to another browser.</p><div class="inline-actions"><button class="button small" id="export-progress">Download backup</button><button class="button small" id="import-progress">Restore backup</button><input id="progress-file" type="file" accept="application/json,.json" hidden></div></section><section id="browser-ai-settings"><h3>Start the website’s AI</h3><p>One-time model download. Your questions are processed on your device. Chrome or Edge with WebGPU is recommended. Choose a model that fits your computer.</p><label for="ai-model">Tutor model</label><select id="ai-model"><option value="Qwen3-4B-q4f16_1-MLC">Balanced · Qwen3 4B · 4 GB+ GPU memory</option><option value="Qwen3-8B-q4f16_1-MLC">More capable · Qwen3 8B · 7 GB+ GPU memory</option><option value="Qwen3-1.7B-q4f16_1-MLC">Smaller · Qwen3 1.7B · 3 GB+ GPU memory</option></select><button class="button primary" id="start-browser-ai">Download & start AI</button><progress id="ai-download-progress" max="1" value="0" aria-label="AI model download progress"></progress><p id="ai-download-status" role="status"></p></section><button class="button primary" id="recheck">Check connection ↻</button></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

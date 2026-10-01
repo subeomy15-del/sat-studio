@@ -1,0 +1,983 @@
+[
+  {
+    "id": "q01",
+    "topic": "Linear equations",
+    "category": "Math",
+    "difficulty": "Easy",
+    "question": "If 3(x − 4) = 2x + 5, what is x?",
+    "choices": [
+      "19",
+      "7",
+      "17",
+      "13"
+    ],
+    "answerIndex": 2,
+    "explanation": "Distribute: 3x − 12 = 2x + 5. Subtract 2x, then add 12: x = 17. Substitution gives 39 on each side.",
+    "hint": "Distribute the 3 to both terms inside the parentheses."
+  },
+  {
+    "id": "q02",
+    "topic": "Linear equations",
+    "category": "Math",
+    "difficulty": "Medium",
+    "question": "If 5x + 7 = 42, what is the value of 10x − 3?",
+    "choices": [
+      "67",
+      "35",
+      "81",
+      "70"
+    ],
+    "answerIndex": 0,
+    "explanation": "Subtract 7 to get 5x = 35. Double this equality to get 10x = 70, then subtract 3 to obtain 67. You can find the requested expression without calculating x.",
+    "hint": "The question asks for an expression, not just x."
+  },
+  {
+    "id": "q03",
+    "topic": "Slope and linear functions",
+    "category": "Math",
+    "difficulty": "Easy",
+    "question": "A line passes through (2, 5) and (6, 17). What is its slope?",
+    "choices": [
+      "12",
+      "2",
+      "1/3",
+      "3"
+    ],
+    "answerIndex": 3,
+    "explanation": "Slope is change in y divided by change in x: (17 − 5)/(6 − 2) = 12/4 = 3.",
+    "hint": "Use the same point order in the numerator and denominator."
+  },
+  {
+    "id": "q04",
+    "topic": "Systems of equations",
+    "category": "Math",
+    "difficulty": "Medium",
+    "question": "The equations y = 3x − 2 and x + y = 18 have solution (x, y). What is y?",
+    "choices": [
+      "16",
+      "13",
+      "5",
+      "7"
+    ],
+    "answerIndex": 1,
+    "explanation": "Substitute 3x − 2 for y: x + 3x − 2 = 18, so x = 5. Then y = 3(5) − 2 = 13. The requested answer is y.",
+    "hint": "Substitute the first equation into the second, then return to the requested variable."
+  },
+  {
+    "id": "q05",
+    "topic": "Systems of equations",
+    "category": "Math",
+    "difficulty": "Hard",
+    "question": "For which value of k does the system 2x + 3y = 8 and 4x + ky = 19 have no solution?",
+    "choices": [
+      "6",
+      "3",
+      "12",
+      "8"
+    ],
+    "answerIndex": 0,
+    "explanation": "Doubling the first equation gives 4x + 6y = 16. If k = 6, the left sides match but the constants 16 and 19 differ. These equations describe distinct parallel lines, so no solution exists.",
+    "hint": "Make the x-coefficients match and compare both the y-coefficients and constants."
+  },
+  {
+    "id": "q06",
+    "topic": "Quadratics",
+    "category": "Math",
+    "difficulty": "Medium",
+    "question": "What is the larger solution of x² − 9x + 20 = 0?",
+    "choices": [
+      "4",
+      "9",
+      "20",
+      "5"
+    ],
+    "answerIndex": 3,
+    "explanation": "Factor the quadratic as (x − 4)(x − 5) = 0. Its solutions are 4 and 5, so the larger is 5.",
+    "hint": "Find two numbers with product 20 and sum 9."
+  },
+  {
+    "id": "q07",
+    "topic": "Quadratics",
+    "category": "Math",
+    "difficulty": "Medium",
+    "question": "The function f(x) = −3(x − 2)² + 12 has what maximum value?",
+    "choices": [
+      "2",
+      "−3",
+      "12",
+      "9"
+    ],
+    "answerIndex": 2,
+    "explanation": "Since (x − 2)² is nonnegative, −3(x − 2)² is at most 0. The greatest output is therefore 12, attained at x = 2.",
+    "hint": "In vertex form, distinguish the x-coordinate of the vertex from its y-coordinate."
+  },
+  {
+    "id": "q08",
+    "topic": "Discriminant",
+    "category": "Math",
+    "difficulty": "Hard",
+    "question": "For which value of c does x² − 10x + c = 0 have exactly one distinct real solution?",
+    "choices": [
+      "100",
+      "10",
+      "25",
+      "20"
+    ],
+    "answerIndex": 2,
+    "explanation": "Exactly one distinct real solution requires a zero discriminant: (−10)² − 4(1)c = 0. Thus 100 − 4c = 0 and c = 25. The equation becomes (x − 5)² = 0.",
+    "hint": "Set b² − 4ac equal to zero."
+  },
+  {
+    "id": "q09",
+    "topic": "Exponential growth",
+    "category": "Math",
+    "difficulty": "Medium",
+    "question": "A population is modeled by P(t) = 500(1.06)^t, where t is measured in years. What annual percent increase does the model represent?",
+    "choices": [
+      "0.06%",
+      "6%",
+      "1.06%",
+      "106%"
+    ],
+    "answerIndex": 1,
+    "explanation": "The multiplier 1.06 is 1 + 0.06, meaning each year the model adds 6% of the previous year’s population. The starting population is 500.",
+    "hint": "A growth multiplier is 1 plus the decimal growth rate."
+  },
+  {
+    "id": "q10",
+    "topic": "Radical equations",
+    "category": "Math",
+    "difficulty": "Hard",
+    "question": "What is the solution of √(x + 12) = x?",
+    "choices": [
+      "−3 only",
+      "12 only",
+      "−3 and 4",
+      "4 only"
+    ],
+    "answerIndex": 3,
+    "explanation": "Squaring gives x + 12 = x², so (x − 4)(x + 3) = 0. Candidates are 4 and −3. Only 4 satisfies the original equation: √16 = 4, whereas √9 = 3, not −3.",
+    "hint": "After squaring, check every candidate in the original equation."
+  },
+  {
+    "id": "q11",
+    "topic": "Percent change",
+    "category": "Math",
+    "difficulty": "Easy",
+    "question": "A notebook’s price rises from $8 to $10. What is the percent increase?",
+    "choices": [
+      "2%",
+      "25%",
+      "80%",
+      "20%"
+    ],
+    "answerIndex": 1,
+    "explanation": "The increase is $2. Divide by the original price: 2/8 = 0.25 = 25%. Dividing by $10 would use the wrong base.",
+    "hint": "Percent increase uses the original amount as the denominator."
+  },
+  {
+    "id": "q12",
+    "topic": "Successive percentages",
+    "category": "Math",
+    "difficulty": "Medium",
+    "question": "A $200 bicycle is discounted by 15%. An 8% sales tax is then applied to the discounted price. What is the final price?",
+    "choices": [
+      "$156.40",
+      "$186.00",
+      "$216.00",
+      "$183.60"
+    ],
+    "answerIndex": 3,
+    "explanation": "The discounted price is 200 × 0.85 = $170. Apply tax to $170: 170 × 1.08 = $183.60. Multiply the two change factors rather than combining the percentages by subtraction.",
+    "hint": "Apply the discount first; the tax base is the discounted price."
+  },
+  {
+    "id": "q13",
+    "topic": "Ratios",
+    "category": "Math",
+    "difficulty": "Easy",
+    "question": "A jar contains only red and blue beads in a ratio of 3:5. If there are 64 beads in all, how many are red?",
+    "choices": [
+      "24",
+      "40",
+      "48",
+      "32"
+    ],
+    "answerIndex": 0,
+    "explanation": "There are 3 + 5 = 8 total ratio parts. Each part represents 64/8 = 8 beads, so the red beads total 3 × 8 = 24.",
+    "hint": "Red beads make up 3 of the 8 total parts."
+  },
+  {
+    "id": "q14",
+    "topic": "Weighted mean",
+    "category": "Math",
+    "difficulty": "Medium",
+    "question": "Four students have an average score of 70, and six other students have an average score of 90. What is the average score of all ten students?",
+    "choices": [
+      "78",
+      "80",
+      "84",
+      "82"
+    ],
+    "answerIndex": 3,
+    "explanation": "The total score is 4(70) + 6(90) = 280 + 540 = 820. Divide by 10 students to get 82. The two group means have unequal weights because the group sizes differ.",
+    "hint": "Convert each mean back into a total first."
+  },
+  {
+    "id": "q15",
+    "topic": "Conditional probability",
+    "category": "Math",
+    "difficulty": "Medium",
+    "question": "A club has 12 juniors and 8 seniors. Five juniors and three seniors take art. Among club members who take art, what fraction are juniors?",
+    "choices": [
+      "5/8",
+      "5/12",
+      "12/20",
+      "5/20"
+    ],
+    "answerIndex": 0,
+    "explanation": "Eight club members take art: 5 juniors and 3 seniors. Restricting the group to art students, 5 of the 8 are juniors, giving 5/8.",
+    "hint": "The phrase “among club members who take art” determines the denominator."
+  },
+  {
+    "id": "q16",
+    "topic": "Study design",
+    "category": "Math",
+    "difficulty": "Medium",
+    "question": "Researchers randomly assign 100 young plants of the same species to receive either Fertilizer A or Fertilizer B under otherwise comparable conditions. What is the main purpose of random assignment?",
+    "choices": [
+      "To guarantee identical results in both groups",
+      "To help support a causal comparison of the fertilizers",
+      "To eliminate all possible measurement error",
+      "To prove the plants represent every plant species"
+    ],
+    "answerIndex": 1,
+    "explanation": "Random assignment helps balance other factors across treatment groups, supporting a causal comparison when the experiment is well designed. It does not guarantee identical groups or permit conclusions about every species.",
+    "hint": "Random assignment and random sampling accomplish different things."
+  },
+  {
+    "id": "q17",
+    "topic": "Right triangles",
+    "category": "Math",
+    "difficulty": "Easy",
+    "question": "A right triangle has legs of lengths 9 and 12. What is the hypotenuse’s length?",
+    "choices": [
+      "21",
+      "25",
+      "15",
+      "18"
+    ],
+    "answerIndex": 2,
+    "explanation": "By the Pythagorean theorem, c² = 9² + 12² = 81 + 144 = 225, so c = 15. The hypotenuse is the longest side.",
+    "hint": "Square the two leg lengths, add, then take the positive square root."
+  },
+  {
+    "id": "q18",
+    "topic": "Circles",
+    "category": "Math",
+    "difficulty": "Medium",
+    "question": "A circle is represented by (x + 3)² + (y − 2)² = 36. What is its radius?",
+    "choices": [
+      "18",
+      "6",
+      "36",
+      "3"
+    ],
+    "answerIndex": 1,
+    "explanation": "Compare with (x − h)² + (y − k)² = r². Since r² = 36, r = 6. The center is (−3, 2), but the question asks for the radius.",
+    "hint": "The right side is the radius squared."
+  },
+  {
+    "id": "q19",
+    "topic": "Vocabulary in context",
+    "category": "Reading",
+    "difficulty": "Easy",
+    "question": "The historian initially doubted the diary’s authenticity, but several independent records _____ its account of the event. Which choice best completes the text?",
+    "choices": [
+      "abandoned",
+      "corroborated",
+      "concealed",
+      "contradicted"
+    ],
+    "answerIndex": 1,
+    "explanation": "“Corroborated” means supported or confirmed with evidence. The word “but” contrasts the historian’s initial doubt with records that support the diary’s account. “Contradicted” would reinforce doubt rather than contrast with it.",
+    "hint": "Predict a word meaning “supported with evidence.”"
+  },
+  {
+    "id": "q20",
+    "topic": "Vocabulary in context",
+    "category": "Reading",
+    "difficulty": "Medium",
+    "question": "Because the measurements varied widely from trial to trial, the researcher described the preliminary findings as _____ and called for additional experiments. Which choice best completes the text?",
+    "choices": [
+      "definitive",
+      "inconclusive",
+      "identical",
+      "irrelevant"
+    ],
+    "answerIndex": 1,
+    "explanation": "“Inconclusive” means not leading to a firm conclusion. Variable measurements and a request for further experiments indicate uncertainty. “Irrelevant” would mean unrelated to the issue, which the text does not establish.",
+    "hint": "What kind of findings require more evidence before a conclusion can be firm?"
+  },
+  {
+    "id": "q21",
+    "topic": "Main idea",
+    "category": "Reading",
+    "difficulty": "Medium",
+    "question": "A city replaced several lawns with gardens containing many native plant species. Over the next two years, researchers recorded more bee species in these gardens than in nearby lawns. The researchers suggest that planting a variety of native species can help support urban bee diversity. What is the main idea?",
+    "choices": [
+      "The researchers proved that every native plant attracts the same bees.",
+      "Diverse native-plant gardens may support more bee species than lawns.",
+      "Bees can survive only in gardens planted by researchers.",
+      "All cities should remove every lawn immediately."
+    ],
+    "answerIndex": 1,
+    "explanation": "The passage connects diverse native-plant gardens with greater observed bee diversity and offers a measured conclusion. The correct choice captures that central point. The other choices add universal claims, restrictions, or policy demands absent from the text.",
+    "hint": "Choose the answer that includes both the comparison and the cautious conclusion."
+  },
+  {
+    "id": "q22",
+    "topic": "Inference",
+    "category": "Reading",
+    "difficulty": "Medium",
+    "question": "A museum’s paper archive was closed for repairs in March. During that month, visits to its online archive doubled relative to February, while total visits to the museum’s website remained nearly unchanged. Which inference is best supported?",
+    "choices": [
+      "Interest in the online archive increased without a comparable rise in overall website traffic.",
+      "The website contained no pages other than the online archive.",
+      "Every online archive visitor had previously used the paper archive.",
+      "The repairs permanently ended demand for the paper archive."
+    ],
+    "answerIndex": 0,
+    "explanation": "The text directly reports more archive visits and nearly unchanged total website visits. This supports increased interest in that part of the site without an overall traffic increase. It does not identify individual visitors or establish permanent effects.",
+    "hint": "Do not infer who the visitors were or what happened after March."
+  },
+  {
+    "id": "q23",
+    "topic": "Evidence",
+    "category": "Reading",
+    "difficulty": "Hard",
+    "question": "A researcher hypothesizes that placing shade cloth over young trees improves their survival during heat waves. Which finding most directly supports this hypothesis?",
+    "choices": [
+      "Among otherwise comparable young trees exposed to the same heat wave, 90% under shade cloth survived, compared with 60% without it.",
+      "Mature trees were taller than young trees.",
+      "Some gardeners prefer trees with broad leaves.",
+      "The shade cloth was sold in three colors."
+    ],
+    "answerIndex": 0,
+    "explanation": "The comparison isolates the relevant condition—shade cloth—and measures the relevant outcome—young-tree survival during a heat wave. The other statements do not test the proposed relationship.",
+    "hint": "Match both the treatment and the outcome named in the hypothesis."
+  },
+  {
+    "id": "q24",
+    "topic": "Paired texts",
+    "category": "Reading",
+    "difficulty": "Hard",
+    "question": "Text 1: The unusual marks on the pottery were probably decorative; their repeated shapes suggest an interest in visual patterns. Text 2: The marks repeat in arrangements that correspond to recorded trade quantities, suggesting that they served an accounting purpose. How would the author of Text 2 most likely respond to Text 1?",
+    "choices": [
+      "By denying that any shapes are repeated",
+      "By agreeing that the marks had no practical use",
+      "By proposing a functional explanation for the repeated marks",
+      "By claiming that the pottery was never used in trade"
+    ],
+    "answerIndex": 2,
+    "explanation": "Text 2 accepts that the marks repeat but interprets the pattern as evidence of accounting. It therefore offers a functional explanation in place of the primarily decorative explanation in Text 1.",
+    "hint": "Separate agreement about the observation from disagreement about its explanation."
+  },
+  {
+    "id": "q25",
+    "topic": "Sentence boundaries",
+    "category": "Writing",
+    "difficulty": "Easy",
+    "question": "Which choice completes the text so that it conforms to standard English conventions? “The storm passed _____ the crew resumed its work.”",
+    "choices": [
+      ";",
+      ",",
+      ": and",
+      ", however,"
+    ],
+    "answerIndex": 0,
+    "explanation": "Both “The storm passed” and “the crew resumed its work” are independent clauses. A semicolon can join them. A comma alone creates a comma splice, and adding “however” between commas does not fix it. A colon followed by “and” is not a valid connection here.",
+    "hint": "Check whether each side can stand as a complete sentence."
+  },
+  {
+    "id": "q26",
+    "topic": "Colons",
+    "category": "Writing",
+    "difficulty": "Medium",
+    "question": "Which sentence uses a colon correctly?",
+    "choices": [
+      "The kit contains: a ruler and a compass.",
+      "The kit: contains a ruler and a compass.",
+      "The kit contains two: tools, a ruler and a compass.",
+      "The kit contains two tools: a ruler and a compass."
+    ],
+    "answerIndex": 3,
+    "explanation": "A colon may introduce a list after a complete clause. “The kit contains two tools” is complete, making this option correct. The other choices split a subject from its verb, a verb from its object, or a number from its noun.",
+    "hint": "Read the words before the colon as a standalone sentence."
+  },
+  {
+    "id": "q27",
+    "topic": "Subject-verb agreement",
+    "category": "Writing",
+    "difficulty": "Easy",
+    "question": "Which choice completes the text so that it conforms to standard English conventions? “The collection of photographs from the expeditions _____ stored in a climate-controlled room.”",
+    "choices": [
+      "have been",
+      "were",
+      "are",
+      "is"
+    ],
+    "answerIndex": 3,
+    "explanation": "The subject is the singular noun “collection,” so the singular verb “is” agrees. “Photographs” and “expeditions” occur in modifying phrases and do not control the verb.",
+    "hint": "Temporarily remove “of photographs from the expeditions.”"
+  },
+  {
+    "id": "q28",
+    "topic": "Modifiers",
+    "category": "Writing",
+    "difficulty": "Medium",
+    "question": "Which choice completes the sentence logically and grammatically? “Examining the satellite images, _____”",
+    "choices": [
+      "the geologist noticed a new river channel.",
+      "the river channel appeared in the images.",
+      "the images revealed a new river channel.",
+      "a new river channel was noticed by the geologist."
+    ],
+    "answerIndex": 0,
+    "explanation": "The introductory phrase describes whoever is examining the images. The correct choice places “the geologist” immediately after the phrase, making the modifier logical. The other options imply that a channel or the images performed the examining.",
+    "hint": "Who is doing the examining? That person should be the next subject."
+  },
+  {
+    "id": "q29",
+    "topic": "Transitions",
+    "category": "Writing",
+    "difficulty": "Medium",
+    "question": "The prototype was expensive to manufacture. _____ its unusually low energy consumption could make it economical over many years. Which transition best completes the text?",
+    "choices": [
+      "Consequently,",
+      "For example,",
+      "Nevertheless,",
+      "Similarly,"
+    ],
+    "answerIndex": 2,
+    "explanation": "The second sentence presents a long-term benefit that contrasts with the initial cost. “Nevertheless” expresses that contrast. The low energy use is not an example or a stated consequence of expensive manufacturing.",
+    "hint": "Name the relationship: drawback followed by offsetting benefit."
+  },
+  {
+    "id": "q30",
+    "topic": "Rhetorical synthesis",
+    "category": "Writing",
+    "difficulty": "Medium",
+    "question": "A student’s notes state: Observatory A opened in 1990 and has a 4-meter telescope. Observatory B opened in 2010 and has a 4-meter telescope. The student wants to emphasize a similarity between the observatories. Which sentence best achieves that goal?",
+    "choices": [
+      "Observatory A opened twenty years before Observatory B.",
+      "Observatory B opened in 2010, while Observatory A opened in 1990.",
+      "Although they opened in different years, both observatories have 4-meter telescopes.",
+      "Observatory A has a telescope and opened in 1990."
+    ],
+    "answerIndex": 2,
+    "explanation": "The correct choice explicitly states the shared telescope size. Two alternatives emphasize the difference in opening dates, and the remaining alternative mentions only one observatory. Accurate details must still meet the requested rhetorical goal.",
+    "hint": "The shared feature is telescope size."
+  },
+  {
+    "id": "q31",
+    "topic": "Possessives",
+    "category": "Writing",
+    "difficulty": "Medium",
+    "question": "Three students submitted one proposal together. Which choice completes the sentence correctly? “The three _____ proposal received an award.”",
+    "choices": [
+      "student",
+      "student’s",
+      "students’",
+      "students"
+    ],
+    "answerIndex": 2,
+    "explanation": "The proposal belongs to three students, so use the possessive form of the regular plural “students”: students’. The singular possessive student’s would indicate one student.",
+    "hint": "First make the noun plural, then show possession."
+  },
+  {
+    "id": "q32",
+    "topic": "Text structure",
+    "category": "Reading",
+    "difficulty": "Medium",
+    "question": "A passage first describes the belief that a bird species migrates alone. It then explains how researchers tracked several birds and reports that their routes and timing closely matched. What is the main function of the discussion of tracking?",
+    "choices": [
+      "To argue that tracking technology should never be used",
+      "To give an unrelated example of animal communication",
+      "To establish that all bird species migrate identically",
+      "To explain the method used to investigate the initial belief"
+    ],
+    "answerIndex": 3,
+    "explanation": "Tracking is the research method used to evaluate the opening belief. The passage moves from a belief to a method and then to a finding; the method is neither an unrelated example nor a universal claim about birds.",
+    "hint": "Label each part: belief → method → result."
+  },
+  {
+    "id": "ext01",
+    "topic": "Rational expressions",
+    "category": "Math",
+    "difficulty": "Medium",
+    "question": "For x ≠ 4, which expression equals (x² − 16)/(x − 4)?",
+    "choices": [
+      "x − 4",
+      "x + 4",
+      "x² + 4",
+      "1"
+    ],
+    "answerIndex": 1,
+    "explanation": "Factor x² − 16 = (x − 4)(x + 4). Cancel the nonzero factor x − 4 to obtain x + 4. The original restriction x ≠ 4 still applies.",
+    "hint": "Factor the difference of two squares.",
+    "tags": [
+      "advanced math",
+      "rational"
+    ]
+  },
+  {
+    "id": "ext02",
+    "topic": "Rational equations",
+    "category": "Math",
+    "difficulty": "Medium",
+    "question": "What is the solution to 2/(x − 1) = 3/(x + 2)?",
+    "choices": [
+      "−7",
+      "1",
+      "7",
+      "−2"
+    ],
+    "answerIndex": 2,
+    "explanation": "Exclude x = 1 and −2. Cross-multiply: 2x + 4 = 3x − 3, so x = 7. Check: 2/6 and 3/9 both equal 1/3. The excluded values cannot be solutions.",
+    "hint": "Multiply by both denominators, then check the excluded inputs.",
+    "tags": [
+      "advanced math"
+    ]
+  },
+  {
+    "id": "ext03",
+    "topic": "Polynomial factors",
+    "category": "Math",
+    "difficulty": "Hard",
+    "question": "If x − 3 is a factor of x² + kx + 12, what is k?",
+    "choices": [
+      "−7",
+      "−3",
+      "3",
+      "7"
+    ],
+    "answerIndex": 0,
+    "explanation": "A factor x − 3 means the polynomial equals zero at x = 3. Substitute: 9 + 3k + 12 = 0, so k = −7. Check: x² − 7x + 12 = (x − 3)(x − 4).",
+    "hint": "A root makes the polynomial equal zero.",
+    "tags": [
+      "advanced math"
+    ]
+  },
+  {
+    "id": "ext04",
+    "topic": "Inequalities",
+    "category": "Math",
+    "difficulty": "Medium",
+    "question": "Which inequality is equivalent to −3x + 8 ≥ 20?",
+    "choices": [
+      "x ≥ −4",
+      "x ≤ −4",
+      "x ≤ 4",
+      "x ≥ 4"
+    ],
+    "answerIndex": 1,
+    "explanation": "Subtract 8 to get −3x ≥ 12. Divide by −3 and reverse the sign: x ≤ −4. At x = −4, the original expression equals 20; at x = −5 it equals 23.",
+    "hint": "Dividing by a negative reverses the inequality.",
+    "tags": [
+      "algebra"
+    ]
+  },
+  {
+    "id": "ext05",
+    "topic": "Absolute value",
+    "category": "Math",
+    "difficulty": "Medium",
+    "question": "What is the sum of the two solutions to |x − 3| = 5?",
+    "choices": [
+      "−2",
+      "3",
+      "6",
+      "8"
+    ],
+    "answerIndex": 2,
+    "explanation": "x − 3 can equal 5 or −5, giving x = 8 or −2. Their sum is 6. The question asks for the sum, not either individual solution.",
+    "hint": "Distance 5 from 3 gives one value on each side.",
+    "tags": [
+      "algebra"
+    ]
+  },
+  {
+    "id": "ext06",
+    "topic": "Function transformations",
+    "category": "Math",
+    "difficulty": "Medium",
+    "question": "The function g is defined by g(x) = −2(x − 3)² + 7. What is its maximum value?",
+    "choices": [
+      "−11",
+      "−2",
+      "3",
+      "7"
+    ],
+    "answerIndex": 3,
+    "explanation": "Because (x − 3)² ≥ 0, −2(x − 3)² ≤ 0. Thus g(x) ≤ 7, with equality at x = 3. The maximum output is 7; 3 is the input where it occurs and −11 is the y-intercept.",
+    "hint": "Use vertex form and the sign of the leading coefficient.",
+    "tags": [
+      "advanced math"
+    ]
+  },
+  {
+    "id": "ext07",
+    "topic": "Function evaluation",
+    "category": "Math",
+    "difficulty": "Easy",
+    "question": "If f(x) = 2x² − 3, what is f(−2)?",
+    "choices": [
+      "−11",
+      "−7",
+      "5",
+      "13"
+    ],
+    "answerIndex": 2,
+    "explanation": "f(−2) = 2(−2)² − 3 = 2·4 − 3 = 5. Square the entire negative input: (−2)² = 4.",
+    "hint": "Substitute the input using parentheses.",
+    "tags": [
+      "advanced math"
+    ]
+  },
+  {
+    "id": "ext08",
+    "topic": "Percent change",
+    "category": "Math",
+    "difficulty": "Hard",
+    "question": "An item’s price rises by 20% and then falls by 20%. The final price is $96. What was its original price?",
+    "choices": [
+      "$92.16",
+      "$96",
+      "$100",
+      "$104"
+    ],
+    "answerIndex": 2,
+    "explanation": "The combined multiplier is 1.20 × 0.80 = 0.96. If the original price is p, 0.96p = 96, so p = 100. Check: 100 → 120 → 96. Equal percentage changes do not cancel because their bases differ.",
+    "hint": "Write a multiplier for each change.",
+    "tags": [
+      "data",
+      "percent"
+    ]
+  },
+  {
+    "id": "ext09",
+    "topic": "Unit conversion",
+    "category": "Math",
+    "difficulty": "Medium",
+    "question": "A cyclist travels at 18 kilometers per hour. What is this speed in meters per second?",
+    "choices": [
+      "3",
+      "5",
+      "18",
+      "30"
+    ],
+    "answerIndex": 1,
+    "explanation": "18 km/h × 1000 m/km ÷ 3600 s/h = 5 m/s. Both kilometer and hour units cancel. Multiplying only by 1000 ignores the time conversion.",
+    "hint": "Convert distance and time, not just distance.",
+    "tags": [
+      "data",
+      "units"
+    ]
+  },
+  {
+    "id": "ext10",
+    "topic": "Weighted mean",
+    "category": "Math",
+    "difficulty": "Medium",
+    "question": "A group of 12 students has a mean score of 80. Another group of 8 has a mean score of 90. What is the combined mean?",
+    "choices": [
+      "82",
+      "84",
+      "85",
+      "86"
+    ],
+    "answerIndex": 1,
+    "explanation": "The total is 12·80 + 8·90 = 960 + 720 = 1680. Divide by all 20 students: 1680/20 = 84. The unweighted mean 85 would be valid only for equal group sizes.",
+    "hint": "Recover each group’s total before averaging.",
+    "tags": [
+      "data",
+      "statistics"
+    ]
+  },
+  {
+    "id": "ext11",
+    "topic": "Margin of error",
+    "category": "Math",
+    "difficulty": "Easy",
+    "question": "A poll estimates that 62% of a population supports a proposal, with a margin of error of 3 percentage points. What range does this report describe?",
+    "choices": [
+      "59% to 65%",
+      "60.14% to 63.86%",
+      "3% to 62%",
+      "62% to 65%"
+    ],
+    "answerIndex": 0,
+    "explanation": "Add and subtract 3 percentage points: 62 − 3 = 59 and 62 + 3 = 65. The margin is not 3% of 62.",
+    "hint": "Percentage points are added to and subtracted from the reported percentage.",
+    "tags": [
+      "data",
+      "sampling"
+    ]
+  },
+  {
+    "id": "ext12",
+    "topic": "Study design",
+    "category": "Math",
+    "difficulty": "Hard",
+    "question": "Researchers randomly assign 100 volunteers to either a new tutoring program or the usual program. The new-program group improves more. Which conclusion is best supported by this design, assuming the experiment was well conducted?",
+    "choices": [
+      "The program is effective for every high-school student.",
+      "The program caused greater improvement among the participants.",
+      "Random assignment makes the volunteers a representative national sample.",
+      "Improvement cannot have any causal explanation."
+    ],
+    "answerIndex": 1,
+    "explanation": "Random assignment supports a causal comparison between treatments for the participants. Volunteer recruitment limits generalization to a broader population. Random assignment and random sampling serve different purposes.",
+    "hint": "Separate a causal claim from a claim about the population.",
+    "tags": [
+      "data",
+      "experiments"
+    ]
+  },
+  {
+    "id": "ext13",
+    "topic": "Circle equations",
+    "category": "Math",
+    "difficulty": "Medium",
+    "question": "A circle has equation (x − 2)² + (y + 3)² = 25. What is its center?",
+    "choices": [
+      "(2, −3)",
+      "(−2, 3)",
+      "(2, 3)",
+      "(−2, −3)"
+    ],
+    "answerIndex": 0,
+    "explanation": "The center-radius form is (x − h)² + (y − k)² = r². Thus h = 2, k = −3, and r = 5. The sign inside each parenthesis is opposite the coordinate.",
+    "hint": "Compare with (x − h)² + (y − k)² = r².",
+    "tags": [
+      "geometry"
+    ]
+  },
+  {
+    "id": "ext14",
+    "topic": "Similar triangles",
+    "category": "Math",
+    "difficulty": "Medium",
+    "question": "Two similar triangles have corresponding side lengths 3 and 9. If the smaller triangle’s area is 10, what is the larger triangle’s area?",
+    "choices": [
+      "30",
+      "60",
+      "90",
+      "270"
+    ],
+    "answerIndex": 2,
+    "explanation": "The length scale factor is 9/3 = 3. Areas scale by 3² = 9, so the larger area is 10·9 = 90. Multiplying area by only 3 confuses lengths and areas.",
+    "hint": "Area changes by the square of the length scale factor.",
+    "tags": [
+      "geometry"
+    ]
+  },
+  {
+    "id": "ext15",
+    "topic": "Trigonometry",
+    "category": "Math",
+    "difficulty": "Medium",
+    "question": "In a right triangle, an acute angle θ has opposite side length 5 and hypotenuse length 13. What is cos θ?",
+    "choices": [
+      "5/13",
+      "5/12",
+      "12/13",
+      "13/12"
+    ],
+    "answerIndex": 2,
+    "explanation": "The adjacent side is √(13² − 5²) = √144 = 12. Cosine is adjacent/hypotenuse, so cos θ = 12/13. The fraction 5/13 is sine.",
+    "hint": "Find the third side, then use adjacent divided by hypotenuse.",
+    "tags": [
+      "geometry",
+      "trigonometry"
+    ]
+  },
+  {
+    "id": "ext16",
+    "topic": "Circle arcs",
+    "category": "Math",
+    "difficulty": "Hard",
+    "question": "An arc has length 3π in a circle with radius 6. What is the arc’s central angle in radians?",
+    "choices": [
+      "π/2",
+      "π",
+      "2π",
+      "18π"
+    ],
+    "answerIndex": 0,
+    "explanation": "Arc length s = rθ when θ is in radians. Thus θ = 3π/6 = π/2. Check: this is one quarter of a full circle, whose circumference is 12π.",
+    "hint": "Use s = rθ with radians.",
+    "tags": [
+      "geometry"
+    ]
+  },
+  {
+    "id": "ext17",
+    "topic": "Sentence boundaries",
+    "category": "Reading & Writing",
+    "difficulty": "Medium",
+    "question": "Which choice correctly completes the sentence? “The experiment was repeated three times _______ the results remained consistent.”",
+    "choices": [
+      ",",
+      ";",
+      "no punctuation",
+      ": and"
+    ],
+    "answerIndex": 1,
+    "explanation": "Each side is an independent clause: “The experiment was repeated three times” and “the results remained consistent.” A semicolon joins them. A comma alone creates a comma splice. A colon followed by “and” does not form the intended boundary.",
+    "hint": "Test whether both sides could stand alone.",
+    "tags": [
+      "grammar",
+      "punctuation"
+    ]
+  },
+  {
+    "id": "ext18",
+    "topic": "Transitions",
+    "category": "Reading & Writing",
+    "difficulty": "Medium",
+    "question": "“The telescope’s mirror is larger than its predecessor’s. _______ it can collect more light.” Which transition best connects the sentences?",
+    "choices": [
+      "Nevertheless,",
+      "For example,",
+      "Consequently,",
+      "Similarly,"
+    ],
+    "answerIndex": 2,
+    "explanation": "The second sentence gives a consequence of the first: a larger mirror collects more light. Consequently marks that cause-and-effect relationship. Nevertheless signals contrast; for example introduces an instance; similarly compares parallel cases.",
+    "hint": "Name the relationship before reading the transitions.",
+    "tags": [
+      "expression",
+      "writing"
+    ]
+  },
+  {
+    "id": "ext19",
+    "topic": "Subject-verb agreement",
+    "category": "Reading & Writing",
+    "difficulty": "Medium",
+    "question": "Which choice completes the sentence in Standard English? “The collection of photographs from the expeditions _______ in the museum.”",
+    "choices": [
+      "are displayed",
+      "were displayed",
+      "have been displayed",
+      "is displayed"
+    ],
+    "answerIndex": 3,
+    "explanation": "The subject is “collection,” singular. “Of photographs from the expeditions” modifies the collection and does not control the verb. “Is displayed” agrees with the subject.",
+    "hint": "Find the head noun, not the nearest plural noun.",
+    "tags": [
+      "grammar"
+    ]
+  },
+  {
+    "id": "ext20",
+    "topic": "Modifiers",
+    "category": "Reading & Writing",
+    "difficulty": "Medium",
+    "question": "Which revision avoids a dangling modifier?",
+    "choices": [
+      "After analyzing the data, the conclusion was unexpected.",
+      "After analyzing the data, an unexpected conclusion appeared.",
+      "After analyzing the data, the researchers reached an unexpected conclusion.",
+      "After analyzing the data, the unexpected result was a surprise."
+    ],
+    "answerIndex": 2,
+    "explanation": "The opening phrase describes whoever analyzed the data. Only “the researchers” can logically perform that action. The other subjects—conclusion, result—cannot analyze data.",
+    "hint": "Ask who performs the action in the opening phrase.",
+    "tags": [
+      "grammar"
+    ]
+  },
+  {
+    "id": "ext21",
+    "topic": "Inference",
+    "category": "Reading & Writing",
+    "difficulty": "Hard",
+    "question": "“Seeds recovered from the oldest layer of the site were wild varieties. Domesticated varieties appeared only in more recent layers.” Which inference is best supported?",
+    "choices": [
+      "The site’s earliest occupants never ate plants.",
+      "Cultivation of domesticated varieties began after the oldest layer formed.",
+      "Every seed in the region eventually became domesticated.",
+      "The oldest layer formed more recently than all other layers."
+    ],
+    "answerIndex": 1,
+    "explanation": "The layers show wild varieties first and domesticated varieties later. This supports a later beginning of cultivation of domesticated varieties at the site. It does not establish what all occupants ate or what happened to every seed in the region.",
+    "hint": "Preserve the scope and time sequence of the evidence.",
+    "tags": [
+      "reading",
+      "information"
+    ]
+  },
+  {
+    "id": "ext22",
+    "topic": "Main idea",
+    "category": "Reading & Writing",
+    "difficulty": "Medium",
+    "question": "“Some city planners once treated small parks as decorative extras. Recent studies, however, suggest that these parks can lower nearby temperatures and provide residents with accessible outdoor space.” What is the main idea?",
+    "choices": [
+      "Small parks have practical benefits that exceed their decorative role.",
+      "All cities have replaced large parks with small ones.",
+      "Decorative parks always increase temperatures.",
+      "Outdoor space matters only to city planners."
+    ],
+    "answerIndex": 0,
+    "explanation": "The passage contrasts an earlier view with evidence of practical benefits. The correct choice captures that contrast without adding an unsupported claim about all cities, higher temperatures, or planners alone.",
+    "hint": "Summarize both the earlier view and the newer evidence.",
+    "tags": [
+      "reading",
+      "information"
+    ]
+  },
+  {
+    "id": "ext23",
+    "topic": "Vocabulary in context",
+    "category": "Reading & Writing",
+    "difficulty": "Medium",
+    "question": "“The team’s initial finding was tentative; further experiments were needed before the researchers could draw a firm conclusion.” As used here, “tentative” most nearly means:",
+    "choices": [
+      "provisional",
+      "careless",
+      "definitive",
+      "unrelated"
+    ],
+    "answerIndex": 0,
+    "explanation": "The contrast with “a firm conclusion” and the need for further experiments show that the initial finding was provisional, meaning subject to confirmation. Tentative does not necessarily imply carelessness.",
+    "hint": "Predict the meaning from the contrast before checking choices.",
+    "tags": [
+      "reading",
+      "craft"
+    ]
+  },
+  {
+    "id": "ext24",
+    "topic": "Paired texts",
+    "category": "Reading & Writing",
+    "difficulty": "Hard",
+    "question": "Text 1: “Introducing trees to an urban block should lower summer temperatures because foliage supplies shade.” Text 2: “Trees can provide cooling, but the effect varies with species, water availability, and street design.” How would the author of Text 2 most likely respond to Text 1?",
+    "choices": [
+      "Reject the possibility that trees provide shade.",
+      "Agree with the general idea but emphasize conditions affecting the outcome.",
+      "Claim that street design has no effect on cooling.",
+      "Assert that all tree species cool blocks equally."
+    ],
+    "answerIndex": 1,
+    "explanation": "Text 2 accepts possible cooling but qualifies the claim with several conditions. The response is qualified agreement, not outright rejection. Choices claiming no design effect or equal performance contradict Text 2.",
+    "hint": "Find both the agreement and the qualification.",
+    "tags": [
+      "reading",
+      "craft"
+    ]
+  }
+]

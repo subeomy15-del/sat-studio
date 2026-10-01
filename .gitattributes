@@ -1,0 +1,7 @@
+*.pdf binary
+*.png binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+public/vendor/** -whitespace
+docs/vendor/** -whitespace

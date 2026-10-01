@@ -1,0 +1,8 @@
+.env
+*.log
+node_modules/
+.DS_Store
+test-results/
+
+.runtime/
+data/bundles/

@@ -1,0 +1,17 @@
+import { mkdir, cp, writeFile, readFile } from 'node:fs/promises';
+import { build } from 'esbuild';
+const root = new URL('../', import.meta.url);
+await mkdir(new URL('public/core/',root),{recursive:true});
+for (const name of ['study','providers','bundles']) await cp(new URL(`lib/${name}.mjs`,root),new URL(`public/core/${name}.mjs`,root));
+await build({entryPoints:[new URL('scripts/ai-engine.js',root).pathname],bundle:true,format:'esm',minify:true,outfile:new URL('public/vendor/browser-ai.js',root).pathname});
+await build({entryPoints:[new URL('scripts/ai-worker.js',root).pathname],bundle:true,format:'esm',minify:true,outfile:new URL('public/vendor/ai-worker.js',root).pathname});
+await cp(new URL('public/',root),new URL('docs/',root),{recursive:true});
+await mkdir(new URL('docs/data/',root),{recursive:true});
+for(const name of ['lessons.json','practice.json','guide.md','bundles.json']) await cp(new URL(`data/${name}`,root),new URL(`docs/data/${name}`,root));
+await cp(new URL('data/bundles/',root),new URL('docs/bundles/',root),{recursive:true});
+await writeFile(new URL('docs/site-config.js',root),'export const hosted = true;\n');
+await writeFile(new URL('docs/.nojekyll',root),'');
+const html=await readFile(new URL('docs/index.html',root),'utf8');
+await writeFile(new URL('docs/index.html',root),html.replaceAll('href="/','href="./').replaceAll('src="/','src="./'));
+await cp(new URL('node_modules/@mlc-ai/web-llm/LICENSE',root),new URL('docs/vendor/webllm.LICENSE',root));
+console.log('Built GitHub Pages website in docs/');

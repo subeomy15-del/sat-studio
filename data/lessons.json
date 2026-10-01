@@ -1,0 +1,315 @@
+[
+  {
+    "id": "linear-equations",
+    "title": "Linear equations: make the unknown behave",
+    "category": "Math",
+    "description": "Translate words into equations, solve efficiently, and answer the actual question.",
+    "minutes": 9,
+    "tags": [
+      "algebra",
+      "equations",
+      "linear",
+      "word problems"
+    ],
+    "content": "## The core idea\nAn equation is a balance. Add, subtract, multiply, or divide both sides by the same valid quantity to preserve its solutions. Before calculating, identify the exact quantity the question asks for. If it asks for 3x + 2, you may not need to find x separately.\n\n## Your repeatable method\n1. Distribute carefully, especially a negative sign before parentheses.\n2. Combine like terms on each side.\n3. Move variable terms to one side and constants to the other.\n4. Solve, then substitute into the original equation or requested expression.\n\n## Worked example\nSolve 4(2x − 3) = 3x + 18. Distributing gives 8x − 12 = 3x + 18. Subtract 3x and add 12 to get 5x = 30, so x = 6. Check: the left side is 4(12 − 3) = 36 and the right side is 18 + 18 = 36.\n\nA gym charges a $25 registration fee plus $12 per visit. A total cost of $109 gives 25 + 12v = 109, so v = 7 visits. The fixed fee is added once; the visit fee multiplies the number of visits.\n\n## Traps to catch\n“Five less than twice x” means 2x − 5, not 5 − 2x. If the variable disappears and you obtain 0 = 0, every permitted value works. If you obtain 0 = 7, there is no solution. Dividing by an expression containing x can discard a solution when that expression equals zero.\n\n## Check yourself\nFor 7x + 4 = 25, x = 3, but 2x − 1 = 5. Circle the target before solving so that an intermediate answer does not steal the point."
+  },
+  {
+    "id": "lines-systems",
+    "title": "Lines & systems: see the intersection",
+    "category": "Math",
+    "description": "Read slope and intercepts, and recognize one, no, or infinitely many solutions.",
+    "minutes": 11,
+    "tags": [
+      "algebra",
+      "linear functions",
+      "slope",
+      "systems"
+    ],
+    "content": "## Read the equation as a story\nIn y = mx + b, m is the change in y for each increase of 1 in x, and b is the value of y at x = 0. A negative slope means the output decreases as the input increases. Slope between two points is (y₂ − y₁)/(x₂ − x₁); keep the order consistent.\n\n## Worked example: interpret a model\nA water tank is modeled by V = 420 − 15t, where V is liters and t is minutes. It begins with 420 liters and loses 15 liters per minute. For 240 liters remaining, solve 240 = 420 − 15t, giving t = 12. The model only makes physical sense while the tank contains water.\n\n## Worked example: solve a system\nFor y = 2x + 1 and x + y = 10, substitute: x + 2x + 1 = 10. Then x = 3 and y = 7. The ordered pair (3, 7) lies on both lines. You can also add or subtract equations to eliminate a variable, especially when coefficients already match.\n\n## How many solutions?\nAfter writing both equations in slope-intercept form, different slopes give one intersection. Equal slopes with different intercepts give no intersection. Equal slopes and equal intercepts describe the same line and give infinitely many solutions. Vertical lines require separate attention because their slope is undefined.\n\n## Common traps\nAn x-intercept has y = 0, not x = 0. A slope of −15 is a rate, not a starting amount. When a question asks for x + y, a system may reveal that sum immediately. Your local Test 8, Math Module 1, Question 10 offers practice with parallel lines."
+  },
+  {
+    "id": "quadratics",
+    "title": "Quadratics: choose the useful form",
+    "category": "Math",
+    "description": "Find roots, vertices, and the number of real solutions without unnecessary work.",
+    "minutes": 12,
+    "tags": [
+      "advanced math",
+      "quadratics",
+      "factoring",
+      "discriminant"
+    ],
+    "content": "## Three forms, three jobs\nStandard form ax² + bx + c helps with the quadratic formula and discriminant. Factored form a(x − r₁)(x − r₂) reveals the zeros r₁ and r₂. Vertex form a(x − h)² + k reveals the vertex (h, k). If a is positive, the vertex is a minimum; if a is negative, it is a maximum.\n\n## Worked example: roots and vertex\nFor f(x) = x² − 8x + 12, factoring gives (x − 2)(x − 6). The roots are 2 and 6. Completing the square gives (x − 4)² − 4, so the vertex is (4, −4). These are descriptions of the same curve. Notice that the vertex's x-coordinate is halfway between the two roots.\n\n## When factoring is awkward\nUse x = [−b ± √(b² − 4ac)]/(2a). The discriminant D = b² − 4ac predicts the number of distinct real roots: two when D > 0, one when D = 0, and none when D < 0. For x² − 6x + k = 0 to have exactly one real solution, 36 − 4k = 0, so k = 9.\n\n## Traps to catch\nThe vertex of (x + 5)² − 7 is (−5, −7), because x + 5 is x − (−5). A parabola can have a negative minimum without having a negative leading coefficient. A double root counts as one distinct solution. If the problem restricts the domain to time after an event, reject roots outside that domain even when the algebra is correct."
+  },
+  {
+    "id": "exponents-radicals",
+    "title": "Exponents, radicals & exponential change",
+    "category": "Math",
+    "description": "Simplify powers and recognize growth, decay, and extraneous solutions.",
+    "minutes": 11,
+    "tags": [
+      "advanced math",
+      "exponents",
+      "radicals",
+      "exponential"
+    ],
+    "content": "## Rules worth understanding\nFor a positive base a, aᵐ · aⁿ = aᵐ⁺ⁿ and aᵐ/aⁿ = aᵐ⁻ⁿ. A power raised to a power multiplies exponents: (aᵐ)ⁿ = aᵐⁿ. These rules also apply to negative nonzero bases when the exponents are integers; fractional exponents require care with signs and real-number domains. A negative exponent means a reciprocal: a⁻² = 1/a². The principal square root is nonnegative, so √(x²) = |x|, not automatically x.\n\n## Growth and decay models\nIn y = A · bᵗ, A is the value at t = 0 and b is the multiplier for each time period. An increase of 8% gives b = 1.08; a decrease of 8% gives b = 0.92. A quantity doubling every 3 hours can be modeled as A · 2^(t/3) when t is measured in hours.\n\n## Worked example\nA culture begins with 200 cells and grows by 10% per hour in a model. After 2 hours, N = 200(1.10)² = 242. The second 10% applies to 220, not the original 200. Therefore adding 20 twice would produce the wrong model.\n\n## Radicals need a check\nSolve √(x + 6) = x. Squaring gives x + 6 = x², or (x − 3)(x + 2) = 0. Candidate solutions are 3 and −2. Checking the original equation leaves only x = 3, because a principal square root cannot equal −2.\n\n## Traps to catch\nExponents do not distribute over addition: (a + b)² is a² + 2ab + b². Squaring can introduce extra solutions. Match the time unit in the exponent to the growth period before doing any calculation."
+  },
+  {
+    "id": "percent-ratio",
+    "title": "Percentages, ratios & units",
+    "category": "Math",
+    "description": "Choose the correct base and keep every quantity in consistent units.",
+    "minutes": 10,
+    "tags": [
+      "problem solving",
+      "percent",
+      "ratios",
+      "units"
+    ],
+    "content": "## Percent is a relationship\nA percentage has a base. Percent change is (new − original)/original × 100%. The denominator is the original amount, even when the new amount appears more prominently in the question. An increase of p% multiplies by 1 + p/100; a decrease multiplies by 1 − p/100.\n\n## Worked example: reverse a discount\nAfter a 20% discount, a jacket costs $64. If P is the original price, 0.80P = 64, so P = $80. Adding 20% to $64 would give $76.80, because that uses the wrong base.\n\n## Successive changes multiply\nA $100 item rises 20% and then falls 20%. Its price becomes 100(1.20)(0.80) = $96. Equal percentage changes in opposite directions do not cancel because their bases differ.\n\n## Ratios are parts\nIf red to blue beads are in a 3:5 ratio, there are 8 total parts. With 64 beads, each part represents 8 beads, giving 24 red and 40 blue. The fraction that is red is 3/8, not 3/5; 3/5 compares red directly with blue.\n\n## Let units guide you\nTo convert 3 hours to minutes, multiply by 60 minutes per hour; the hours cancel. For area, square the length factor: if 1 yard = 3 feet, then 1 square yard = 9 square feet. For volume, cube it. Keep units in your intermediate work to make an incorrect conversion visible.\n\n## Final check\nAsk whether the result should be bigger or smaller. Reconstruct the original condition: 80 × 0.80 = 64. That quick check catches many base errors."
+  },
+  {
+    "id": "statistics-probability",
+    "title": "Data, probability & experiments",
+    "category": "Math",
+    "description": "Reason about center, spread, conditional probability, and what a study can prove.",
+    "minutes": 12,
+    "tags": [
+      "problem solving",
+      "statistics",
+      "probability",
+      "data"
+    ],
+    "content": "## Center and spread answer different questions\nMean is sum divided by count. Median is the middle value after sorting. An outlier can move the mean substantially while leaving the median unchanged. Standard deviation describes spread: adding the same constant to every value changes the mean but leaves the standard deviation unchanged.\n\n## Worked example: combine groups correctly\nFour students average 80 points, and six students average 90 points. Their total is 4(80) + 6(90) = 860 points across 10 students. The combined mean is 86, not 85. Group sizes determine the weights.\n\n## Conditional probability changes your denominator\nSuppose a club has 12 juniors, of whom 5 take art, and 8 seniors, of whom 3 take art. Among students taking art, the probability that a randomly selected student is a junior is 5/(5 + 3) = 5/8. The phrase “among students taking art” limits the eligible group to 8 students.\n\n## What can a study support?\nA random sample helps a result represent the population from which the sample was taken. Random assignment to treatments helps support a cause-and-effect conclusion in a well-designed experiment. These are different design features. An observed association alone does not establish causation; another variable might explain it.\n\n## Traps to catch\nA poll estimate of 52% with a margin of error of 3 percentage points produces an interval from 49% to 55%; it does not mean each individual is close to 52%. Read chart labels, scales, and units before comparing values. A larger sample usually reduces sampling variability when the rest of the sampling design is comparable."
+  },
+  {
+    "id": "geometry-trig",
+    "title": "Geometry & right-triangle trigonometry",
+    "category": "Math",
+    "description": "Use diagrams, similarity, circles, and trig ratios with confidence.",
+    "minutes": 12,
+    "tags": [
+      "geometry",
+      "triangles",
+      "circles",
+      "trigonometry"
+    ],
+    "content": "## Build from a few reliable facts\nTriangle angles sum to 180°. A right triangle satisfies a² + b² = c², where c is the hypotenuse opposite the right angle. Similar triangles have equal corresponding angles and proportional corresponding side lengths. Match corresponding sides by their angles, not by where they sit on the page.\n\n## Worked example: trig ratios\nA right triangle has legs 6 and 8, so its hypotenuse is √(36 + 64) = 10. For the angle opposite the side of length 6, sine = 6/10 = 3/5, cosine = 8/10 = 4/5, and tangent = 6/8 = 3/4. Changing the reference angle swaps the opposite and adjacent legs.\n\n## Circles and coordinates\nCircle area is πr² and circumference is 2πr. For (x − h)² + (y − k)² = r², the center is (h, k) and the radius is r. Thus (x + 2)² + (y − 5)² = 49 has center (−2, 5) and radius 7.\n\n## Scaling changes dimensions differently\nIf similar figures have a side-length scale factor of 3, their areas have a scale factor of 9. Similar solids have a volume scale factor of 27. A circle with double the radius has four times the area.\n\n## Traps to catch\nDo not infer an unmarked right angle or equal lengths from a sketch. The diameter is twice the radius. Keep degrees and radians consistent: 180° = π radians. An arc's fraction of a circle is its central angle divided by 360° when the angle is in degrees."
+  },
+  {
+    "id": "vocabulary",
+    "title": "Words in context: predict before you pick",
+    "category": "Reading",
+    "description": "Use logic and precise meaning instead of choosing the fanciest word.",
+    "minutes": 8,
+    "tags": [
+      "vocabulary",
+      "words in context",
+      "reading"
+    ],
+    "content": "## The answer belongs to the passage\nA vocabulary question tests a word's meaning in a particular context. A word can have several dictionary meanings; only one may fit the sentence. Read the entire passage before deciding, including the words after the blank.\n\n## A four-step routine\n1. Identify the passage's subject and what it says about that subject.\n2. Notice logical signals: although, because, despite, therefore, and rather than.\n3. Replace the blank with a simple phrase of your own.\n4. Compare each choice with that prediction, then reread the complete sentence.\n\n## Worked example\n“Although the first measurements appeared inconsistent, repeated trials revealed a _____ pattern.” The contrast suggests a pattern that is stable or reliable. “Consistent” fits. “Random” would continue the first idea instead of contrasting with it. “Decorative” says nothing useful about measurements. “Expensive” might describe a study, but it does not supply the required meaning here.\n\n## Pay attention to degree\n“Question” and “disprove” are not interchangeable: questioning a conclusion is weaker than demonstrating that it is false. “Occasional” does not mean “constant.” Eliminate an option if its intensity goes beyond the evidence.\n\n## Build a useful vocabulary notebook\nRecord the word, the passage's meaning, a sentence you write, and one easily confused word. Revisit the word in a new context instead of only memorizing a synonym. You do not need to know every option if the context lets you reject three clearly.\n\n## Practice connection\nYour local Test 4, Reading and Writing Module 1, Questions 1–4 provide a short vocabulary set. After answering, explain the logical clue before reading the explanation. This makes your review about a reusable skill."
+  },
+  {
+    "id": "main-idea",
+    "title": "Main ideas & precise inferences",
+    "category": "Reading",
+    "description": "Separate the central claim from details and draw conclusions the text supports.",
+    "minutes": 10,
+    "tags": [
+      "main idea",
+      "inference",
+      "evidence",
+      "reading"
+    ],
+    "content": "## Main idea: cover the passage\nA main-idea answer should describe the passage's central point at the right level of detail. An answer that repeats one true example can still be too narrow. An answer that generalizes beyond the passage can be too broad. Before looking at choices, finish “The author mainly argues or explains that …” in one sentence.\n\n## Worked example\nA passage describes researchers who expected urban gardens to support few insect species, then reports that gardens with diverse native plants supported many species. A sound main idea is that plant diversity in urban gardens can support insect diversity despite an expectation to the contrary. “Researchers studied insects” is too vague; “All urban gardens are better than forests” adds an unsupported comparison.\n\n## Inference: stay close to the evidence\nAn inference is a conclusion supported by the given information, even if the passage does not state it word for word. It is not an invitation to invent a possible story. Track the strength of the language: some does not mean all, may does not mean must, and one study does not establish a universal law.\n\n## A useful elimination test\nFor each answer, identify the exact words or findings that support it. Reject choices that contradict the passage, introduce a new cause, reverse a relationship, or require outside knowledge. A more modest answer is often appropriate, but choose it because it is supported, not simply because it sounds cautious.\n\n## Review move\nWrite one sentence explaining why your answer follows and one sentence identifying the extra assumption in the strongest wrong choice. This trains the distinction between evidence and speculation."
+  },
+  {
+    "id": "evidence-structure",
+    "title": "Evidence, structure & paired texts",
+    "category": "Reading",
+    "description": "Track an argument and choose evidence that addresses its exact claim.",
+    "minutes": 11,
+    "tags": [
+      "evidence",
+      "text structure",
+      "purpose",
+      "paired texts"
+    ],
+    "content": "## Label what each part does\nA sentence might introduce a problem, give an example, describe a method, report a result, qualify a claim, or propose an explanation. A purpose question asks how a sentence contributes to the whole passage. Paraphrasing its content without describing its role is often incomplete.\n\n## Worked example: purpose\nA passage opens with a common belief that older maps were inaccurate, describes a method for comparing surviving maps with modern surveys, and reports strong agreement in several coastal regions. The method sentence explains how the researchers evaluated the belief; it does not itself state their final conclusion.\n\n## Evidence must match the claim\nSuppose a researcher claims that shading increases seedling survival during a heat wave. Useful supporting evidence compares survival for otherwise comparable shaded and unshaded seedlings under the relevant conditions. A statement that shaded plants have darker leaves may be true but does not directly address survival. When asked to weaken a claim, look for evidence that challenges its prediction or its proposed explanation.\n\n## Paired texts: summarize separately\nWrite a short claim for Text 1 and a short claim for Text 2. Then compare them: do the authors agree, disagree, offer different explanations, or qualify the certainty of a shared conclusion? An author can accept a finding while rejecting its explanation.\n\n## Common traps\nA cited scientist's opinion is not automatically the passage author's position. A sentence with an example may illustrate a claim rather than prove it universally. For charts, read the axes and units and state the required comparison before evaluating answer choices. Evidence selection is about relevance, not just whether a statement is true."
+  },
+  {
+    "id": "boundaries",
+    "title": "Sentence boundaries: stop comma splices",
+    "category": "Writing",
+    "description": "Identify complete clauses and choose punctuation by structure.",
+    "minutes": 9,
+    "tags": [
+      "grammar",
+      "punctuation",
+      "sentence boundaries",
+      "clauses"
+    ],
+    "content": "## Start with the sentence skeleton\nAn independent clause contains a subject and a main verb and expresses a complete thought. “The team finished the survey” is independent. “Although the team finished the survey” is dependent because although creates an unfinished relationship.\n\n## Joining two independent clauses\nUse a period, a semicolon, or a comma plus a coordinating conjunction such as and, but, or so. For example: “The survey ended; the team analyzed the results.” You can also write “The survey ended, and the team analyzed the results.” A comma alone usually creates a comma splice.\n\n## Worked example\n“The telescope detected a faint signal _____ the researchers scheduled another observation.” Both sides can stand alone. A semicolon works. A comma alone does not. A colon could work when the second clause explains the first, but here the simple sequence and result are best expressed with a semicolon or an appropriate conjunction if the choices provide one.\n\n## However is not a coordinating conjunction\nWrite “The sample was small; however, the result was informative.” A comma before however does not by itself join two independent clauses. The same warning applies to therefore and nevertheless.\n\n## Watch for fake main verbs\nIn “The scientist studying the rocks,” studying is part of a modifying phrase; the wording still lacks a complete main clause. “The scientist studying the rocks discovered a fossil” is complete because discovered is the main verb.\n\n## Review routine\nUnderline each subject and main verb. Temporarily remove descriptive phrases. Then judge the punctuation from the remaining structure, not from where you would pause while speaking."
+  },
+  {
+    "id": "punctuation",
+    "title": "Colons, commas & essential information",
+    "category": "Writing",
+    "description": "Use punctuation to show explanations, interruptions, and ownership.",
+    "minutes": 10,
+    "tags": [
+      "grammar",
+      "commas",
+      "colons",
+      "apostrophes",
+      "punctuation"
+    ],
+    "content": "## A colon needs a complete setup\nA colon can introduce an explanation, example, or list after an independent clause: “The kit contains three tools: a ruler, a compass, and a protractor.” Do not insert a colon between a verb and its object: “The kit contains: three tools” breaks the sentence's basic structure.\n\n## Essential versus extra information\nNonessential information can be removed without changing which person or thing the sentence identifies. Set it off with paired commas, dashes, or parentheses. “The river, which crosses two provinces, floods in spring” remains structurally complete when the middle phrase is removed. Essential information identifies the intended subject and should not be isolated automatically.\n\n## Worked example\n“The botanist Dr. Lena Park collected the samples.” If the name identifies which botanist is meant, no commas are needed. In “Our lead botanist, Dr. Lena Park, collected the samples,” the name supplies extra information about an already identified person. Context controls the decision; names do not automatically require commas.\n\n## Possession and plurals\nA singular possessive normally adds apostrophe-s: the student's notes. A regular plural ending in s adds an apostrophe after the s: the students' notes. A plain plural has no apostrophe: three students. Its is possessive; it's means it is or it has.\n\n## Traps to catch\nDo not put a comma between a subject and its verb just because a long phrase intervenes. If you open an interruption, make sure it closes appropriately. Read the complete sentence with the removable phrase deleted; the remaining punctuation should preserve a grammatical structure."
+  },
+  {
+    "id": "agreement-modifiers",
+    "title": "Agreement, verbs & modifiers",
+    "category": "Writing",
+    "description": "Find the real subject, follow the timeline, and attach descriptions correctly.",
+    "minutes": 10,
+    "tags": [
+      "grammar",
+      "verbs",
+      "agreement",
+      "modifiers",
+      "tense"
+    ],
+    "content": "## Find the grammatical subject\nThe nearest noun is not always the subject. In “The collection of rare coins is valuable,” collection is singular, so is is correct. The phrase of rare coins modifies collection and does not control the verb. Temporarily cross out intervening phrases when checking agreement.\n\n## Let the passage establish tense\nUse the timeline rather than assuming every verb must share the same tense. A passage can discuss a past discovery and a present scientific fact. Past perfect, formed with had plus a past participle, marks an action completed before another past reference point when that relationship needs to be made explicit.\n\n## Worked example: modifier placement\n“Walking through the museum, Maya noticed a newly restored painting.” Maya is the person walking. “Walking through the museum, a painting caught Maya's attention” incorrectly makes the painting appear to be walking. An introductory modifying phrase should logically describe the subject that immediately follows it.\n\n## Pronouns need clear references\nA pronoun should agree in number with its antecedent and identify it clearly. If a sentence mentions both a researcher and an editor, she may be ambiguous without further context. Choose wording that makes the intended relationship explicit while preserving the passage's meaning.\n\n## Parallel structure helps\nRelated items should use matching grammatical forms: “The project requires planning experiments, collecting data, and analyzing results.” Mixing a noun phrase with unrelated verb forms can break the structure.\n\n## Traps to catch\nAn -ing word is not automatically a complete main verb. A plural noun inside a prepositional phrase should not distract you from a singular subject. Always check the entire sentence after making a local edit."
+  },
+  {
+    "id": "transitions-synthesis",
+    "title": "Transitions & student-note questions",
+    "category": "Writing",
+    "description": "Choose logical connections and meet the writer’s stated goal.",
+    "minutes": 9,
+    "tags": [
+      "transitions",
+      "rhetorical synthesis",
+      "student notes",
+      "expression of ideas"
+    ],
+    "content": "## Name the relationship first\nTransitions communicate a logical relationship between ideas. However signals contrast; therefore signals a consequence; moreover adds a related point; for example introduces an instance; similarly marks resemblance. Several choices may sound fluent, but only the right relationship preserves the argument.\n\n## Worked example: contrast\n“The new insulation was expensive to install. _____ it substantially reduced heating costs over the following decade.” The second sentence introduces a benefit that contrasts with the upfront drawback. Nevertheless or however fits. For example does not, because reduced heating costs are not an example of installation expense.\n\n## Read on both sides of the blank\nThe sentence before the blank alone is insufficient. Ask whether the next sentence supports, challenges, illustrates, or follows from it. If you can state “This happened, so that happened,” a result transition may work. If you can state “This is true, but that is also true,” a contrast may work.\n\n## Student notes: the goal controls selection\nRead the instruction before the notes. You may be asked to emphasize a similarity, explain a difference, introduce a person, or support a claim. A choice can accurately quote facts from the notes and still fail the requested goal.\n\n## Worked example: synthesis\nNotes say that Museum A opened in 1985 and houses 2,000 works, while Museum B opened in 2005 and houses 2,000 works. To emphasize a similarity, choose a sentence about both museums holding 2,000 works. Opening dates are accurate but highlight a difference.\n\n## Review move\nDescribe why the answer achieves the exact goal. For a transition error, write the actual relationship in two words, such as “contrast: cost/benefit.”"
+  },
+  {
+    "id": "study-system",
+    "title": "Your study system: turn errors into points",
+    "category": "Strategy",
+    "description": "Build a realistic cycle of diagnosis, focused practice, and delayed review.",
+    "minutes": 8,
+    "tags": [
+      "study plan",
+      "error log",
+      "practice",
+      "review"
+    ],
+    "content": "## Start with evidence about yourself\nUse a practice set to identify skills that need work. Mark every response confident, uncertain, or guessed before checking the answers. Review correct guesses alongside errors: a lucky choice does not establish mastery. Track the section, topic, question reference, time spent, and reason for each mistake.\n\n## A useful error log\nFor every missed or uncertain question, record four things: what you chose, the correct reasoning, the earliest step where your process failed, and a short rule you can reuse. “Careless” is too vague. “I divided by the new price instead of the original price” identifies a fix you can practice.\n\n## A 45-minute session\nSpend 5 minutes recalling yesterday's rules without notes, 10 minutes studying one weak concept, 20 minutes solving a focused set, and 10 minutes reviewing. Adjust the lengths to your available time. Depth of review matters more than collecting a large number of completed questions.\n\n## Revisit after a delay\nRedo a missed question later without looking at its explanation. Then solve a different question using the same skill. Remembering the answer letter is not the same as learning the method. Mix older topics into later sessions so that you must recognize which method applies.\n\n## Use your local bundles deliberately\nYour SAT folder contains bundles 4–11. Record a full address such as “Test 6 → Math → Module 1 → Question 10” because numbering repeats. Keep some unfamiliar questions for later progress checks. The paper bundles are useful for learning, but their format and score ranges should not be treated as an exact simulation of an adaptive digital test."
+  },
+  {
+    "id": "test-day",
+    "title": "Pacing, checking & calculator decisions",
+    "category": "Strategy",
+    "description": "Protect easy points and use tools when they make the reasoning clearer.",
+    "minutes": 8,
+    "tags": [
+      "pacing",
+      "calculator",
+      "checking",
+      "test strategy"
+    ],
+    "content": "## Make a decision, then move\nWhen a question stalls you, identify the missing step. If no useful next step appears, mark the question and move on, then return with the time available. Spending many minutes on one uncertain question can prevent you from reaching questions you can solve quickly. Practice this decision during timed sets rather than improvising it under pressure.\n\n## Use a two-pass approach when useful\nOn the first pass, complete questions you can solve with a clear method. Mark questions that need more work. On the second pass, revisit them with an estimate of the remaining time. This is a flexible strategy, not a requirement to rush or skip a fixed number of questions.\n\n## Choose calculator work intentionally\nGraphing two functions can reveal an intersection. A table can test candidate values. A calculator can verify arithmetic or evaluate a model. But a plotted point may be rounded, and an unhelpful viewing window may hide an intersection. Know what the graph represents before trusting its appearance.\n\n## A fast math check\nAsk: did I answer the requested quantity? Are the units correct? Does the sign make sense? Does the value satisfy the original equation and its restrictions? Estimation catches results that are algebraically neat but physically implausible.\n\n## A fast reading check\nPoint to the evidence for your choice and name the flaw in the strongest alternative. Avoid changing an answer only because it feels too simple. Change it when you find a specific contradiction, grammar rule, or missed detail.\n\n## Prepare the process\nUse the official test-day and practice instructions for your assigned format and accommodations. Build confidence from a repeatable routine: read the task, choose a method, solve, and check the target."
+  },
+  {
+    "id": "rational-expressions",
+    "title": "Rational expressions: simplify without losing the domain",
+    "category": "Math",
+    "description": "Factor first, cancel factors, and preserve restrictions.",
+    "minutes": 10,
+    "tags": [
+      "advanced math",
+      "rational",
+      "polynomials",
+      "domain"
+    ],
+    "content": "## The rule behind cancellation\nA fraction is a quotient. You may cancel a common nonzero FACTOR from its numerator and denominator. You cannot cancel a term inside a sum. Every original denominator must stay nonzero, even if simplifying removes that denominator.\n\n## Worked example\nSimplify (x² − 9)/(x² − x − 6). Factor the numerator as (x − 3)(x + 3) and the denominator as (x − 3)(x + 2). The expression becomes (x + 3)/(x + 2), but x ≠ 3 and x ≠ −2. At x = 3 the original is undefined; a simplified formula does not restore that input.\n\n## Rational equation\nSolve 2/(x − 1) = 3/(x + 2). First exclude x = 1 and x = −2. Multiply both sides by (x − 1)(x + 2): 2(x + 2) = 3(x − 1). Thus 2x + 4 = 3x − 3, giving x = 7. Check: 2/6 = 3/9 = 1/3. The solution is permitted.\n\n## Polynomial reasoning\nThe remainder when a polynomial P(x) is divided by x − a is P(a). If x − a is a factor, P(a) = 0. For P(x) = x² + kx + 12 to have x − 3 as a factor, 9 + 3k + 12 = 0, so k = −7.\n\n## Trap\n(x + 4)/(x + 2) does not simplify to 4/2. The x terms are part of sums, not common factors. Check x = 2: the original is 6/4, not 2.\n\n## Try it without help\nSimplify (x² − 16)/(x − 4) and state the excluded input. Then check your result: x + 4, with x ≠ 4."
+  },
+  {
+    "id": "inequalities-absolute",
+    "title": "Inequalities & absolute value: track direction and distance",
+    "category": "Math",
+    "description": "Keep endpoint rules and sign reversals straight.",
+    "minutes": 9,
+    "tags": [
+      "algebra",
+      "inequalities",
+      "absolute value"
+    ],
+    "content": "## Inequalities express a range\nSolve an inequality like an equation, except multiplying or dividing by a negative number reverses its direction. Adding or subtracting a negative number does NOT reverse it.\n\n## Worked example\n−3x + 8 ≥ 20 gives −3x ≥ 12, then x ≤ −4. Dividing by −3 reverses ≥ to ≤. Verify the endpoint: x = −4 gives 20, which is allowed. Test x = −5: the expression is 23, also allowed. A plausible wrong answer, x ≥ −4, would include x = 0, but 8 is not at least 20.\n\n## Absolute value is distance\n|x − a| is the distance between x and a. |x − 3| = 5 gives x = 8 or x = −2. |x − 3| < 5 means −5 < x − 3 < 5, so −2 < x < 8. |x − 3| > 5 gives x < −2 OR x > 8.\n\n## Translating constraints\nA club can spend at most $80 on a $20 delivery charge and $6 notebooks. Write 20 + 6n ≤ 80, giving n ≤ 10. Because n is a count, permitted values are nonnegative integers. The maximum is 10 notebooks.\n\n## Graphs and endpoints\n≤ and ≥ include their boundary; < and > do not. For two simultaneous constraints, use the overlap, not their union. Test a convenient point in a proposed solution region.\n\n## Check yourself\nSolve 5 − 2x < 11. Subtract 5, divide by −2, reverse the sign: x > −3. Equality is excluded because the original sign is strict."
+  },
+  {
+    "id": "function-transformations",
+    "title": "Functions: transform graphs and read parameters",
+    "category": "Math",
+    "description": "Separate input changes, output changes, roots, and intersections.",
+    "minutes": 10,
+    "tags": [
+      "advanced math",
+      "function",
+      "transformation",
+      "vertex",
+      "parameters"
+    ],
+    "content": "## A function is an input-output rule\nf(4) asks for the output when the input is 4. Solving f(x) = 4 asks which inputs produce 4. These are different tasks.\n\n## Transformations\nf(x) + k shifts outputs up by k. f(x − h) shifts the graph right by h, because the old input is reached when the new x is h larger. af(x) scales the outputs; a negative a also reflects across the x-axis.\n\n## Worked example\ng(x) = −2(x − 3)² + 7 has vertex (3, 7), opens downward, and has maximum output 7. Its y-intercept is g(0) = −18 + 7 = −11. Its maximum is not its y-intercept.\n\n## A parameter question\nIf f(x) = ax² + bx + c and f(0) = 5, then c = 5. If its roots are 2 and 6, write f(x) = a(x − 2)(x − 6). Then f(0) = 12a = 5, so a = 5/12. Choose the form that makes the given information visible.\n\n## Calculator shortcut\nTo solve f(x) = g(x), graph y = f(x) and y = g(x), then inspect intersection x-coordinates. Zoom to see all relevant intersections and check domain restrictions. An intersection's y-coordinate is not the requested x.\n\n## Transfer\nFor h(x) = (x + 4)² − 9, the vertex is (−4, −9), the minimum is −9, and h(0) = 7. Practice distinguishing all three."
+  },
+  {
+    "id": "data-inference",
+    "title": "Data claims: correlation, sampling & uncertainty",
+    "category": "Math",
+    "description": "Decide which conclusions an experiment or sample actually supports.",
+    "minutes": 10,
+    "tags": [
+      "data",
+      "statistics",
+      "sampling",
+      "margin",
+      "scatterplot",
+      "regression"
+    ],
+    "content": "## Ask how the data were collected\nRandom sampling helps a sample represent its population. Random assignment helps isolate the effect of a treatment. These serve different purposes. An observational association alone does not establish causation.\n\n## Worked example\nA school randomly selects 200 students and asks about sleep and test scores. The sample can inform conclusions about that school's students, subject to uncertainty. A relationship between sleep and scores does not prove sleep caused the score difference: workload, health, or other factors may influence both. This sample does not automatically represent students nationwide.\n\n## Treatment study\nVolunteers are randomly assigned to use a new study method or their usual method. A well-conducted experiment can support a causal conclusion for the participants. Because participants were volunteers rather than a representative random sample, generalization to all students needs care.\n\n## Margin of error\nAn estimate of 60% with a margin of error of 4 percentage points describes a range from 56% to 64% in the stated inferential setting. It does not mean 4% of 60%. Larger random samples generally reduce uncertainty when other conditions are comparable. Margin of error does not repair a biased sampling method.\n\n## Regression\nA line y = 3.2x + 15 predicts an increase of 3.2 y-units for each additional x-unit. The intercept predicts y = 15 at x = 0; that prediction may lack practical meaning if 0 is outside the observed range. Avoid treating extrapolation far beyond the data as certain.\n\n## Trap checklist\nWhich population? Random sample or assignment? Correlation or causation? Percentage points or percent change? Prediction or observed value?"
+  },
+  {
+    "id": "reading-logic",
+    "title": "Reading logic: complete, strengthen, or weaken a claim",
+    "category": "Reading",
+    "description": "Match the evidence to the precise conclusion instead of a related topic.",
+    "minutes": 11,
+    "tags": [
+      "inference",
+      "evidence",
+      "strengthen",
+      "weaken",
+      "logical",
+      "completion"
+    ],
+    "content": "## Identify the job before choosing an answer\nA logical-completion question asks what the passage supports. A strengthen or weaken question asks how an additional finding affects a particular claim. A sentence about the same topic is not enough: it must change the support for that claim.\n\n## Worked original example\nResearchers found that plants near a road grew more slowly than plants farther away. They proposed that road dust caused the difference. A finding that roadside plants received much less water weakens this causal explanation by providing an alternative cause. A finding that plants exposed to road dust grew slowly under otherwise identical laboratory conditions strengthens it.\n\n## Your four-step method\n1. Name the claim in plain language: “Dust causes slower growth.”\n2. Name the evidence: “Plants near the road grew more slowly.”\n3. Identify the missing connection: “Were other conditions comparable?”\n4. Test whether each choice strengthens, weakens, or leaves that connection unchanged.\n\n## Inferences need restraint\n“Some species survived” does not support “all species survived.” “May increase” does not support “always increases.” Eliminate answers that shift population, time period, cause, or degree beyond what is stated.\n\n## Why wrong answers tempt you\nThey repeat a passage word but support a different claim; reverse cause and effect; add an outside fact; or turn a cautious finding into a certainty. Name the exact mismatch rather than calling an answer “irrelevant” without explanation.\n\n## Try it\nA town's library attendance rose after it extended evening hours. What additional observation would weaken the claim that the longer hours caused the rise? One possible answer is a simultaneous closure of the town's other library, which supplies an alternative explanation."
+  },
+  {
+    "id": "graphs-reading",
+    "title": "Reading graphs: compare the right values",
+    "category": "Reading",
+    "description": "Connect a chart to a claim without confusing units, trends, or categories.",
+    "minutes": 9,
+    "tags": [
+      "reading",
+      "graphs",
+      "tables",
+      "quantitative evidence"
+    ],
+    "content": "## Read the labels first\nBefore comparing bars or points, identify the x-axis, y-axis, units, legend, and time period. Then paraphrase the precise claim the question asks you to support.\n\n## Worked original example\nA table lists survival after a drought: Species A, shaded plots 80%, exposed plots 45%; Species B, shaded plots 60%, exposed plots 55%. The claim is that shade had a larger association with survival for Species A than for Species B. Compare differences within each species: 80 − 45 = 35 percentage points for A and 60 − 55 = 5 for B. The relevant evidence is 35 versus 5, not simply 80 versus 60.\n\n## Choose evidence that answers the claim\nIf the claim compares CHANGE, compare differences or rates of change. If it compares LEVELS at a time, compare values at that time. If it concerns an exception, identify the value that violates the general pattern.\n\n## Common traps\nA category can have the highest final value without the largest increase. An increase from 10 to 20 is 10 units and 100%, which are different measures. A graph association does not by itself prove causation. A truncated axis can exaggerate visual differences; read the actual numbers.\n\n## A repeatable annotation\nWrite “compare ___ with ___ at ___, in ___ units” before scanning answers. Require every part of the chosen statement to match the figure. If an option contains two claims joined by “and,” both must be supported."
+  }
+]
