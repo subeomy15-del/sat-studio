@@ -79,6 +79,7 @@ export async function createApp({ config = readConfig(), fetchImpl = fetch, data
         response.writeHead(200, { 'Content-Type': file.endsWith('.pdf') ? 'application/pdf' : 'image/png', 'Content-Length': content.length, 'Cache-Control': 'private, max-age=3600' });
         return response.end(request.method === 'HEAD' ? undefined : content);
       }
+      if (request.method === 'GET' && pathname === '/api/practice-bank') return json(response, 200, { questions: bank });
       if (request.method === 'GET' && pathname === '/api/library') return json(response, 200, { lessons });
       if (request.method === 'GET' && pathname === '/api/diagnostic') return json(response, 200, diagnosticQuiz(bank));
       if (request.method === 'GET' && pathname === '/api/guide') return json(response, 200, { content: guide });

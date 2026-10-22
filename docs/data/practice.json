@@ -359,12 +359,12 @@
     "question": "A researcher hypothesizes that placing shade cloth over young trees improves their survival during heat waves. Which finding most directly supports this hypothesis?",
     "choices": [
       "Among otherwise comparable young trees exposed to the same heat wave, 90% under shade cloth survived, compared with 60% without it.",
-      "Mature trees were taller than young trees.",
-      "Some gardeners prefer trees with broad leaves.",
-      "The shade cloth was sold in three colors."
+      "Soil beneath shade cloth remained cooler during the heat wave, although the study did not record whether the young trees survived.",
+      "Young trees under shade cloth had a 90% survival rate during a heat wave, while mature trees without shade cloth had a 95% survival rate.",
+      "At sites using shade cloth, young trees had higher survival in mild summers than during severe heat waves."
     ],
     "answerIndex": 0,
-    "explanation": "The comparison isolates the relevant condition—shade cloth—and measures the relevant outcome—young-tree survival during a heat wave. The other statements do not test the proposed relationship.",
+    "explanation": "The keyed comparison matches the treatment and outcome in the hypothesis while holding the age group and heat-wave exposure comparable. Cooler soil is a possible mechanism but does not measure survival. Comparing young shaded trees with mature unshaded trees confounds age with treatment. Comparing mild summers with heat waves while all trees are shaded does not isolate the effect of shade cloth.",
     "hint": "Match both the treatment and the outcome named in the hypothesis."
   },
   {
@@ -374,13 +374,13 @@
     "difficulty": "Hard",
     "question": "Text 1: The unusual marks on the pottery were probably decorative; their repeated shapes suggest an interest in visual patterns. Text 2: The marks repeat in arrangements that correspond to recorded trade quantities, suggesting that they served an accounting purpose. How would the author of Text 2 most likely respond to Text 1?",
     "choices": [
-      "By denying that any shapes are repeated",
-      "By agreeing that the marks had no practical use",
+      "By arguing that a match with trade quantities is compatible only with a primarily decorative purpose",
+      "By accepting a decorative purpose while questioning whether the arrangements actually repeat",
       "By proposing a functional explanation for the repeated marks",
-      "By claiming that the pottery was never used in trade"
+      "By concluding that repeated designs on all pottery from the period must have been accounting records"
     ],
     "answerIndex": 2,
-    "explanation": "Text 2 accepts that the marks repeat but interprets the pattern as evidence of accounting. It therefore offers a functional explanation in place of the primarily decorative explanation in Text 1.",
+    "explanation": "Both texts accept repeated marks. Text 2 uses their correspondence with trade quantities to propose a practical accounting function. It does not treat accounting as evidence for a primarily decorative purpose, deny repetition, or extend its interpretation to all pottery from the period.",
     "hint": "Separate agreement about the observation from disagreement about its explanation."
   },
   {
@@ -908,12 +908,12 @@
     "question": "“Seeds recovered from the oldest layer of the site were wild varieties. Domesticated varieties appeared only in more recent layers.” Which inference is best supported?",
     "choices": [
       "The site’s earliest occupants never ate plants.",
-      "Cultivation of domesticated varieties began after the oldest layer formed.",
+      "The sampled later layers contain domesticated varieties not found in the sampled oldest layer.",
       "Every seed in the region eventually became domesticated.",
       "The oldest layer formed more recently than all other layers."
     ],
     "answerIndex": 1,
-    "explanation": "The layers show wild varieties first and domesticated varieties later. This supports a later beginning of cultivation of domesticated varieties at the site. It does not establish what all occupants ate or what happened to every seed in the region.",
+    "explanation": "The observations support a difference between the sampled layers: domesticated varieties occur in the later samples but not in the oldest sample. They do not establish when cultivation began, whether seeds arrived through trade, or whether unsampled material contains similar seeds. Keep the inference within the evidence actually reported.",
     "hint": "Preserve the scope and time sequence of the evidence.",
     "tags": [
       "reading",
@@ -967,13 +967,13 @@
     "difficulty": "Hard",
     "question": "Text 1: “Introducing trees to an urban block should lower summer temperatures because foliage supplies shade.” Text 2: “Trees can provide cooling, but the effect varies with species, water availability, and street design.” How would the author of Text 2 most likely respond to Text 1?",
     "choices": [
-      "Reject the possibility that trees provide shade.",
+      "Agree that shade can cool a block but conclude that any added tree guarantees the same reduction in temperature.",
       "Agree with the general idea but emphasize conditions affecting the outcome.",
-      "Claim that street design has no effect on cooling.",
-      "Assert that all tree species cool blocks equally."
+      "Argue that knowing the tree species alone is sufficient to predict cooling on any urban block.",
+      "Accept cooling but argue that species and street design replace shade as its only mechanism."
     ],
     "answerIndex": 1,
-    "explanation": "Text 2 accepts possible cooling but qualifies the claim with several conditions. The response is qualified agreement, not outright rejection. Choices claiming no design effect or equal performance contradict Text 2.",
+    "explanation": "Text 2 accepts potential cooling but qualifies its extent with species, water availability, and street design. It neither guarantees uniform results, treats species alone as sufficient, nor excludes shade as a mechanism. The correct response preserves both the agreement and the qualification.",
     "hint": "Find both the agreement and the qualification.",
     "tags": [
       "reading",

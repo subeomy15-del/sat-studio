@@ -1,48 +1,36 @@
-# Margin SAT Studio
-
-A complete SAT study website for Math and Reading and Writing. Built around official practice bundles 4–11, with a browser AI tutor, original lessons, skill checks, and spaced review.
+# Margin — the SAT study desk
 
 Published site: **https://subeomy15-del.github.io/sat-studio/**
 
-## Grammar Academy
+Margin is a free study workspace for SAT Math and Reading and Writing. Version 3 connects a personal study desk, a focused practice room, deep grammar instruction, review scheduling, and official source materials. No account or AI model download is needed for the learning tools.
 
-Open **Grammar Academy** from the sidebar or visit `#grammar`. The course targets students pursuing high Reading and Writing scores, with 16 original advanced SAT-style items and 24 separate foundation items. Eight structural playbooks teach recognition, clause analysis, and distractor elimination. Difficulty is editorial, not calibrated by College Board.
+## The learning experience
 
-The eight-question advanced diagnostic and eight-question mixed benchmark use different questions. The benchmark tracks elapsed time, allows previous-question edits, and withholds explanations until submission. Its eight-minute target is a training choice, not official SAT timing. Confidence is recorded before submission; guesses, mistakes, and hint-assisted answers enter targeted review. The debrief shows correct answers separately from confident independent answers. Repeated items are not evidence of transfer; use the linked official Student Question Bank for unseen hard questions.
+- **Study desk:** a daily starting point driven by your own attempts, review queue, and section focus. Empty progress stays empty; no fabricated scores, streaks, or testimonials.
+- **Practice Lab:** **120 original questions** across Math and Reading and Writing, including **24 newly authored grammar and Expression of Ideas items**. Search and filter by section, content domain, skill, difficulty, and progress status. A short filtered bank produces a shorter set, not unrelated substitutions.
+- **Focus room:** learn mode with immediate feedback or test mode with explanations after the whole set. Cross out choices, bookmark questions, write saved reasoning notes, mark confidence, use keyboard answer selection, and save unfinished sessions. Active time pauses while the tab is hidden or you leave the practice room.
+- **Review:** incorrect, uncertain, and hint-assisted answers remain available immediately. Confident correct answers are scheduled after 1, 3, 7, 14, then 30 days. Dashboard and progress distinguish first attempts from latest attempts so retries do not inflate first-attempt accuracy.
+- **Grammar Academy:** **eight expanded chapters**, each with four teaching sections, a problem/repair contrast, a worked SAT-style example with choice explanations, and a separate understanding check. Course completion records a completed lesson, not mastery. The course separates Standard English Conventions from Expression of Ideas.
+- **Study library:** **22 additional lessons** and a study manual across Math and Reading and Writing.
+- **Study plan:** 10-, 20-, 30-, or 45-minute sessions, a section focus, optional test date, and a personal goal. Skill suggestions require at least two attempted items. Existing official review logs remain available.
+- **Official practice:** **960 questions** from paper practice tests 4–11 with original question images, diagrams, explanations, PDFs, and scoring guides. These are nonadaptive paper materials; use Bluebook for digital adaptive practice.
+- **Search:** find Academy lessons, library lessons, and individual practice questions from the header or with ⌘/Ctrl K.
 
-No account or model download is required. Grammar progress has its own download/restore controls and stays in browser storage. Lessons are in English. Grammar drills cover part of Reading and Writing; results do not predict SAT scores.
+Difficulty labels on original questions are editorial and uncalibrated. Practice accuracy is not an SAT score estimate. Foundation items may be shorter and simpler than SAT passages. Check transfer on unseen official questions.
 
-Run `node tests/grammar-review.mjs` for diagnostic, benchmark, answer editing, uncertainty review, and mobile checks.
+## Progress and privacy
 
-## What you can do
+Learning data stays in browser storage. There are no cross-device accounts or synchronization. Download and restore **learning backups** from Learning progress; these include Practice Lab attempts, notes, bookmarks, session results, profile settings, and Academy completions. Restoring a learning backup replaces that learning record after validation.
 
-- Browse **960 official practice questions** by test, section, module, and question number. See original question images, including graphs and mathematical notation.
-- Attempt a question before checking its official explanation. Printed Math explanations are preserved as images to avoid PDF text errors.
-- Ask the AI for a hint, a step-by-step solution, or a simpler explanation. The selected question and official explanation accompany the request. Source links let you inspect the originals.
-- Read **22 lessons** and the complete study manual, with worked examples, common traps, calculator decisions, and practice methods.
-- Use **56 original practice questions**, custom AI quizzes, or a **16-question diagnostic across eight SAT content domains**.
-- Track incorrect answers, guesses, uncertainty, and hint-assisted answers. Record official attempts and error causes, then revisit questions on an expanding schedule.
-- Set a daily time budget, test date, and goal. Use a study plan informed by the review log.
+Quiz Studio, chat, and official-test logs retain their existing storage and have a separate backup in Connection and settings. Existing data is not deleted by the redesign. Old Grammar Academy records remain in their original storage; its former eight-question results are not merged into new first-attempt statistics.
 
-## Browser AI
+If storage is unavailable or full, learning continues in memory and the app reports that progress cannot be saved. Download a backup before leaving. Lessons are currently in English.
 
-Open Connection settings and select **Download & start AI**. The first use downloads model files. They are cached by the browser when storage is available; refreshes still require reinitialization. Current Chrome or Edge with WebGPU on a computer is recommended.
+## Optional AI tutor
 
-The default model is Qwen3 4B. Qwen3 8B is available for computers with more GPU memory; Qwen3 1.7B uses less memory. Model and context memory requirements vary by device. The site automatically chooses the full-precision variant if the GPU lacks half-precision support. Answers stream as they are generated, and you can stop generation.
+The browser tutor uses WebLLM. Start it explicitly in Connection and settings. Model files download from their hosting services; prompts are processed on the device. Chrome or Edge with WebGPU on a sufficiently capable computer is recommended. The balanced model is Qwen3 4B; smaller and larger options are available. Model availability, memory, and initialization vary by device.
 
-The tutor processes prompts on your device. It does not require an API key. Model downloads contact the model hosting services; chats and learning progress stay in browser storage. It cannot browse the web or inspect Finder. It receives only the study content and question reference supplied by this site.
-
-The browser model is not ChatGPT and does not promise equivalent performance. Official explanations remain the answer reference. AI-generated questions are original practice and can contain errors. The diagnostic is a small sample, not a score prediction or proof of mastery.
-
-## Study first
-
-1. Start with **Find my weak skills** on the Overview page.
-2. Study one skill from the library, then attempt questions independently.
-3. Explain the reason for every miss and uncertain correct answer.
-4. Record official attempts and use **Study plan** for later retries.
-5. Use official **Bluebook adaptive practice** for digital timing and interface practice.
-
-The imported PDFs are nonadaptive paper practice: 33 Reading and Writing or 27 Math questions per module. Standard digital modules have 27 Reading and Writing or 22 Math questions and different timing. Do not treat paper raw scores or this site's quizzes as digital SAT score estimates. Use each official scoring guide for that paper test.
+The AI cannot browse the web or inspect local files, and it can make mistakes. Official explanations are the answer reference. AI-generated quizzes are original practice and can contain errors. The optional local server also supports Ollama or a server-only OpenAI key in a private `.env`.
 
 ## Build and publish
 
@@ -51,34 +39,47 @@ Requires Node.js 24+.
 ```sh
 npm ci
 npm run build
+npm test
+npm run test:browser
 ```
 
-`docs/` is the GitHub Pages output. Serve the `main` branch's `/docs` directory. All URLs are relative, so the site works beneath a GitHub repository path. No backend, secret, or account setup is needed for the public site.
+`docs/` is the checked-in GitHub Pages output. Publish the `main` branch’s `/docs` directory. Asset URLs are relative so the site works under `/sat-studio/`. No backend or secret is required for the hosted site.
 
-Source files live in `public/`, `lib/`, `data/`, and `scripts/`. `scripts/build.mjs` bundles the WebLLM engine and worker, copies the study data and imported assets, and enables hosted mode. The checked-in `docs/` includes the built assets and official source PDFs.
+Run `npm start` and open `http://127.0.0.1:4317` for the optional local server. `public/site-config.js` selects local mode; the build writes hosted mode into `docs/site-config.js`.
 
-The original ZIPs are not modified. To rebuild the import locally, place the bundles in `~/Downloads/SAT` and run `scripts/import-bundles.py`, then `scripts/answer-images.py` with Python containing pdfplumber, pypdfium2, and Pillow. A clean checkout can copy its published `docs/bundles/` to `data/bundles/` before rebuilding.
+Main source modules:
 
-## Optional local server
+- `public/workspace.js`: study desk and learning progress.
+- `public/practice.js`: question catalog, focus room, session recovery, and debrief.
+- `public/practice-core.js`, `public/practice-store.js`: selection, statistics, review scheduling, storage, and backups.
+- `public/academy.js`, `public/course-content.js`: course navigation, lesson content, and checks.
+- `public/rw-practice.js`: new grammar and Expression of Ideas questions.
+- `public/question-bank.js`: normalizes original banks for Practice Lab.
+- `public/study-plan.js`: time budgets and evidence-informed recommendations.
+- `public/design.css`: shared visual system and responsive layouts.
+- `public/app.js`, `public/runtime.js`, `lib/`: existing library, official materials, tutor, and Quiz Studio.
 
-Double-click **Open Margin.command**, or run `npm start` and open `http://127.0.0.1:4317`. The local server supports an installed Ollama model. It can also use an OpenAI key configured in a private `.env`; this optional server mode is not used by GitHub Pages. `.env` is excluded from Git and is never included in `docs/`.
+The official importer expects original bundles in `~/Downloads/SAT`. Existing published `docs/bundles/` can be copied into `data/bundles/` on a clean checkout before building. Import scripts require Python with pdfplumber, pypdfium2, and Pillow.
 
 ## Verification
 
-- `npm test`: provider handling, quiz validation, official retrieval, input validation, and local server boundaries.
-- `node tests/frontend-review.mjs`: chat retries, context, formulas, quizzes, confidence review, persistence, and responsive layouts.
-- `node tests/pages-review.mjs`: real static deployment paths, official materials, study plans, diagnostics, and mobile layouts.
-- `RUN_REAL_AI=1 node tests/pages-review.mjs`: additionally downloads a browser model and checks actual Math and Reading answers. Set `AI_TEST_MODEL` to select another supported model.
+`npm test` covers the server boundaries, providers, generated-quiz validation, official retrieval, content schemas, scheduling, first-attempt statistics, filtering, and session validation.
 
-Browser tests use Playwright from the local Codex runtime; adjust its import path for another development environment.
+`npm run test:browser` serves the built site under `/sat-studio/` and verifies search, all eight course checks, question filtering, answer elimination, keyboard choice selection, saved notes, uncertain-answer review, learning backup download, partial-draft recovery, deferred test grading, responsive navigation, official assets, and mobile overflow across the main routes. Browser tests use Playwright from the installed Codex runtime; update the import path for another environment.
+
+`node tests/grammar-review.mjs` runs the same current learning-flow suite. The older `frontend-review.mjs`, `pages-review.mjs`, and `live-review.mjs` retain version-specific smoke/real-model workflows; their former dashboard assertions do not describe the redesigned navigation.
+
+Content was reviewed for ambiguous alternatives, unsupported inferences, and overbroad grammar rules. Original items are not official or psychometrically calibrated. The content bank should continue to be reviewed with educators and expanded using genuinely new structures.
 
 ## Sources and licenses
 
-SAT is a registered trademark of College Board. This independent educational site is not affiliated with or endorsed by College Board. Official test material retains its printed copyright and attribution. Original teaching content is distinguished from official questions.
+SAT is a registered trademark of College Board. Margin is independent and is not affiliated with or endorsed by College Board. Official materials retain their printed copyright and attribution. Original lessons and questions are distinguished from official content.
 
-- [College Board test structure](https://satsuite.collegeboard.org/sat/whats-on-the-test/structure)
-- [Official paper practice and explanations](https://satsuite.collegeboard.org/practice/practice-tests/paper)
-- [Bluebook practice](https://satsuite.collegeboard.org/practice/practice-tests)
+- [College Board Reading and Writing specifications](https://satsuite.collegeboard.org/sat/whats-on-the-test/reading-writing)
+- [Official content domains](https://satsuite.collegeboard.org/practice/content-domains)
+- [Official Student Question Bank](https://satsuitequestionbank.collegeboard.org/)
+- [Bluebook full-length practice](https://satsuite.collegeboard.org/practice/practice-tests/bluebook)
+- [Official paper practice](https://satsuite.collegeboard.org/practice/practice-tests/paper)
 - [WebLLM documentation](https://webllm.mlc.ai/docs/user/get_started.html)
 
-Bundled Markdown, KaTeX, and WebLLM license notices are in `docs/vendor/`. The model weights retain their upstream licenses and are downloaded separately.
+Bundled Markdown, KaTeX, and WebLLM notices are in `docs/vendor/`. Model weights retain their upstream licenses and download separately.

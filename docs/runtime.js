@@ -70,7 +70,8 @@ export async function requestAPI(path, body, signal, onToken) {
     const result = await r.json(); if(!r.ok) throw Error(result.message || result.error || 'Request failed.'); return result;
   }
   const url = new URL(path, location.origin);
-  if(url.pathname==='/api/health') return {ready:!!engine,provider:'browser',model,message:engine?'Browser AI ready. Your questions are processed on this device.':'Start your browser AI below. The model downloads once and is cached by your browser when space permits. Use Chrome or Edge with WebGPU.',version:'2.0'};
+  if(url.pathname==='/api/health') return {ready:!!engine,provider:'browser',model,message:engine?'Browser AI ready. Your questions are processed on this device.':'Start your browser AI below. The model downloads once and is cached by your browser when space permits. Use Chrome or Edge with WebGPU.',version:'3.0'};
+  if(url.pathname==='/api/practice-bank') return {questions:await data('practice.json')};
   if(url.pathname==='/api/library') return {lessons:await data('lessons.json')};
   if(url.pathname==='/api/diagnostic') return diagnosticQuiz(await data('practice.json'));
   if(url.pathname==='/api/guide') return {content:await data('guide.md')};

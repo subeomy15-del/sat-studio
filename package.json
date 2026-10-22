@@ -1,16 +1,17 @@
 {
   "name": "sat-studio",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "private": true,
   "type": "module",
-  "description": "A local SAT study workspace with an AI tutor, study library, and custom quizzes.",
+  "description": "A free SAT study desk with deep lessons, focused practice, spaced review, official materials, and an optional AI tutor.",
   "engines": {
     "node": ">=24"
   },
   "scripts": {
     "start": "node --env-file-if-exists=.env server.mjs",
     "test": "node --test tests/*.test.mjs",
-    "build": "node scripts/build.mjs"
+    "build": "node scripts/build.mjs",
+    "test:browser": "node tests/experience-review.mjs"
   },
   "devDependencies": {
     "@mlc-ai/web-llm": "0.2.85",

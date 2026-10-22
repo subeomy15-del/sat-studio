@@ -1,0 +1,11 @@
+import {esc,icon} from './ui.js';
+import {loadBank} from './question-bank.js';
+import {skills} from './grammar-data.js';
+export function installSearch(lessons){
+ const dialog=document.querySelector('#search-dialog'),input=dialog.querySelector('input'),results=dialog.querySelector('#search-results');let bank=[];
+ const staticItems=[...skills.map(s=>({title:s.title,detail:'Grammar Academy · lesson',url:`#course/${s.id}`,icon:'book'})),...lessons.map(l=>({title:l.title,detail:`Study library · ${l.category}`,url:`#library/${l.id}`,icon:'book'})),{title:'Practice Lab',detail:'Filter original questions by skill and difficulty',url:'#practice',icon:'target'},{title:'Official practice tests',detail:'960 questions · original source explanations',url:'#bundles',icon:'grid'},{title:'Learning progress',detail:'First attempts, retries, and backups',url:'#insights',icon:'chart'}];
+ function paint(){const term=input.value.trim().toLowerCase();const all=[...staticItems,...bank.map(q=>({title:q.topic,detail:`${q.difficulty} · ${q.stem.slice(0,130)}`,url:`#practice?question=${encodeURIComponent(q.id)}`,icon:'target'}))];const rows=term?all.filter(x=>`${x.title} ${x.detail}`.toLowerCase().includes(term)).slice(0,18):staticItems.slice(0,7);results.innerHTML=rows.map(x=>`<a href="${esc(x.url)}" class="search-result">${icon(x.icon)}<span><strong>${esc(x.title)}</strong><small>${esc(x.detail)}</small></span>${icon('arrow')}</a>`).join('')||'<p class="search-empty">No matches. Try a broader skill or topic.</p>';}
+ async function open(){dialog.showModal();input.value='';paint();input.focus();try{bank=await loadBank();if(dialog.open)paint();}catch{}}
+ document.querySelector('#global-search').onclick=open;dialog.querySelector('[data-close-search]').onclick=()=>dialog.close();input.oninput=paint;results.onclick=e=>{if(e.target.closest('a'))dialog.close();};dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close();}});
+ document.addEventListener('keydown',e=>{if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==='k'){e.preventDefault();if(dialog.open)dialog.close();else open();}else if(dialog.open&&e.key==='ArrowDown'&&document.activeElement===input){e.preventDefault();results.querySelector('a')?.focus();}});
+}
