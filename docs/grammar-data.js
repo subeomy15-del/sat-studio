@@ -1,3 +1,4 @@
+import {advanced,playbooks} from './grammar-advanced.js';
 // Original teaching material and practice, independent of College Board.
 export const skills = [
 ['boundaries','Sentence boundaries','Boundaries','A complete clause has a subject and a verb and expresses a complete thought. Two complete clauses need a period, a semicolon, or a comma plus a coordinating conjunction (and, but, or, so, for, nor, yet).','Read each side of the blank separately. Can each stand as a sentence?','clause = a group of words with a subject and a verb',[
@@ -33,10 +34,16 @@ export const skills = [
 ['The course teaches students to observe carefully, to ask questions, and____',['to test hypotheses.','testing hypotheses.','hypotheses are tested.','tests hypotheses.'],0,['All three items use “to” plus a base verb.','An -ing form does not match the two infinitives.','A complete clause breaks the list’s structure.','“Tests” does not match “to observe” and “to ask.”']],
 ['The new design is not only durable but also____',['it is affordable.','affordable.','affordability.','can be afforded.'],1,['A clause does not match the adjective “durable.”','The adjective “affordable” matches the adjective “durable.”','The noun does not match the adjective “durable.”','A verb phrase does not match the adjective “durable.”']]]]
 ].map(([id,title,domain,rule,strategy,glossary,items])=>({id,title,domain,rule,strategy,glossary,questions:items.map(([text,choices,answer,reasons],i)=>({id:`${id}-${i}`,skill:id,text:text.replace('____',' ____ '),choices:choices.map(c=>c.trim()||'(no punctuation)'),answer,reasons}))}));
+for(const s of skills){s.foundation=s.questions;s.advanced=advanced.filter(q=>q.skill===s.id);s.playbook=playbooks[s.id];s.questions=[...s.advanced,...s.foundation];}
 export const questions=skills.flatMap(s=>s.questions);
 export function selectQuestions(mode, skill, attempts={}) {
+ if(mode==='diagnostic')return skills.map(s=>s.advanced[0]);
+ if(mode==='benchmark')return skills.map(s=>s.advanced[1]);
  const pool=skill?questions.filter(q=>q.skill===skill):questions;
- if(mode==='diagnostic')return skills.map(s=>s.questions[0]);
  if(mode==='review')return pool.filter(q=>attempts[q.id]?.correct===false);
- return [...pool].sort((a,b)=>(attempts[a.id]?.time||0)-(attempts[b.id]?.time||0)).slice(0,skill?3:10);
+ const level=mode==='foundation'?pool.filter(q=>!q.level):pool.filter(q=>q.level==='Advanced');
+ return [...level].sort((a,b)=>(attempts[a.id]?.time||0)-(attempts[b.id]?.time||0)).slice(0,skill?3:8);
+}
+export function summarize(answers){
+ return {correct:answers.filter(a=>a.correct).length,independent:answers.filter(a=>a.correct&&!a.hint&&a.confidence!=='unsure').length,uncertain:answers.filter(a=>a.confidence==='unsure').length,weak:skills.filter(s=>answers.some(a=>a.skill===s.id&&(!a.correct||a.hint||a.confidence==='unsure')))};
 }

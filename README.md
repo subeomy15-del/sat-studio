@@ -6,9 +6,13 @@ Published site: **https://subeomy15-del.github.io/sat-studio/**
 
 ## Grammar Academy
 
-Open **Grammar Academy** from the sidebar or visit `#grammar`. Eight plain English lessons cover sentence boundaries, supplements, colons, agreement, verbs, pronouns, modifiers, and parallel structure. An eight-question starting check recommends lessons; 24 original questions explain every choice. Missed and hint-assisted answers enter targeted review. No account or model download is required. Grammar progress has its own download/restore controls and stays in browser storage. This version teaches in English; it does not yet provide translated lessons or cross-device accounts.
+Open **Grammar Academy** from the sidebar or visit `#grammar`. The course targets students pursuing high Reading and Writing scores, with 16 original advanced SAT-style items and 24 separate foundation items. Eight structural playbooks teach recognition, clause analysis, and distractor elimination. Difficulty is editorial, not calibrated by College Board.
 
-Run `node tests/grammar-review.mjs` for the browser flow and mobile layout checks.
+The eight-question advanced diagnostic and eight-question mixed benchmark use different questions. The benchmark tracks elapsed time, allows previous-question edits, and withholds explanations until submission. Its eight-minute target is a training choice, not official SAT timing. Confidence is recorded before submission; guesses, mistakes, and hint-assisted answers enter targeted review. The debrief shows correct answers separately from confident independent answers. Repeated items are not evidence of transfer; use the linked official Student Question Bank for unseen hard questions.
+
+No account or model download is required. Grammar progress has its own download/restore controls and stays in browser storage. Lessons are in English. Grammar drills cover part of Reading and Writing; results do not predict SAT scores.
+
+Run `node tests/grammar-review.mjs` for diagnostic, benchmark, answer editing, uncertainty review, and mobile checks.
 
 ## What you can do
 
