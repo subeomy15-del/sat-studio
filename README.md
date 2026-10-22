@@ -4,6 +4,12 @@ A complete SAT study website for Math and Reading and Writing. Built around offi
 
 Published site: **https://subeomy15-del.github.io/sat-studio/**
 
+## Grammar Academy
+
+Open **Grammar Academy** from the sidebar or visit `#grammar`. Eight plain English lessons cover sentence boundaries, supplements, colons, agreement, verbs, pronouns, modifiers, and parallel structure. An eight-question starting check recommends lessons; 24 original questions explain every choice. Missed and hint-assisted answers enter targeted review. No account or model download is required. Grammar progress has its own download/restore controls and stays in browser storage. This version teaches in English; it does not yet provide translated lessons or cross-device accounts.
+
+Run `node tests/grammar-review.mjs` for the browser flow and mobile layout checks.
+
 ## What you can do
 
 - Browse **960 official practice questions** by test, section, module, and question number. See original question images, including graphs and mathematical notation.
