@@ -16,6 +16,14 @@ try{
  const go=async hash=>{await page.evaluate(h=>location.hash=h,hash);await page.waitForTimeout(150);};
  await page.goto(`http://127.0.0.1:${server.address().port}/sat-studio/`);
  await page.getByRole('heading',{name:'Big ambition. A clear next step.'}).waitFor();assert.match(await page.locator('.desk-stats').innerText(),/0/);
+ await go('math');await page.getByRole('heading',{name:'Make the numbers make sense.'}).waitFor();
+ await page.getByRole('link',{name:'Practice Math',exact:false}).click();await page.locator('#lab-subject').waitFor();assert.equal(await page.locator('#lab-subject').inputValue(),'Math');
+ await go('english');await page.getByRole('heading',{name:'Read closely. Write clearly.'}).waitFor();
+ await page.locator('#focus-toggle').click();assert.equal(await page.locator('#focus-toggle').getAttribute('aria-pressed'),'true');assert.equal(await page.locator('.sidebar').isVisible(),false);
+ await page.keyboard.press('Escape');assert.equal(await page.locator('#focus-toggle').getAttribute('aria-pressed'),'false');
+ await page.locator('#global-tutor').click();await page.locator('#chat-input').waitFor();await page.locator('#tutor-setup').click();assert.equal(await page.locator('#settings-dialog').evaluate(d=>d.open),true);await page.locator('.dialog-close').click();
+ await go('home');
+
  await page.screenshot({path:'/private/tmp/margin-v3-dashboard-desktop.png',fullPage:true});
  await page.locator('#global-search').click();await page.locator('#workspace-search').fill('boundaries');assert.ok(await page.locator('.search-result').count()>0);await page.locator('.search-result').first().click();await page.locator('.course-article').waitFor();
  await go('grammar');await page.getByRole('heading',{name:'Understand the rule. Own the sentence.'}).waitFor();assert.equal(await page.locator('.academy-course-card').count(),8);
