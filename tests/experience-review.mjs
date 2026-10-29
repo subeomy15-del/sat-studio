@@ -20,6 +20,8 @@ try{
  await page.getByRole('link',{name:'Practice Math',exact:false}).click();await page.locator('#lab-subject').waitFor();assert.equal(await page.locator('#lab-subject').inputValue(),'Math');
  await go('english');await page.getByRole('heading',{name:'Read closely. Write clearly.'}).waitFor();
  await page.locator('#focus-toggle').click();assert.equal(await page.locator('#focus-toggle').getAttribute('aria-pressed'),'true');assert.equal(await page.locator('.sidebar').isVisible(),false);
+ const leavePrompt=page.waitForEvent('dialog');const reload=page.reload().catch(()=>null);const dialog=await leavePrompt;assert.equal(dialog.type(),'beforeunload');await dialog.dismiss();await reload;assert.equal(await page.locator('#focus-toggle').getAttribute('aria-pressed'),'true');
+
  await page.keyboard.press('Escape');assert.equal(await page.locator('#focus-toggle').getAttribute('aria-pressed'),'false');
  await page.locator('#global-tutor').click();await page.locator('#chat-input').waitFor();await page.locator('#tutor-setup').click();assert.equal(await page.locator('#settings-dialog').evaluate(d=>d.open),true);await page.locator('.dialog-close').click();
  await go('home');

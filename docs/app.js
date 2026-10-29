@@ -36,8 +36,16 @@ function renderSubject(section){
  bindGo();$('#subject-ai').onclick=()=>askTutor(`Help me study SAT ${subject}. Ask which skill I want to work on, then guide me step by step.`);
 }
 let focusMode=false;
-function setFocusMode(on){focusMode=on;document.body.classList.toggle('focus-mode',on);$('#focus-toggle').setAttribute('aria-pressed',String(on));$('#focus-toggle').textContent=on?'Exit focus':'Focus mode';}
+async function setFocusMode(on){
+ focusMode=on;document.body.classList.toggle('focus-mode',on);$('#focus-toggle').setAttribute('aria-pressed',String(on));$('#focus-toggle').textContent=on?'Exit focus':'Focus mode';
+ if(on){
+  try{if(!document.fullscreenElement){if(!document.documentElement.requestFullscreen)throw Error('Fullscreen unavailable');await document.documentElement.requestFullscreen();}}
+  catch{toast('Focus mode is on. Fullscreen is unavailable in this browser; closing or reloading will still ask for confirmation.');}
+ }else if(document.fullscreenElement){try{await document.exitFullscreen();}catch{/* The browser may already be leaving fullscreen. */}}
+}
 $('#focus-toggle').onclick=()=>setFocusMode(!focusMode);
+window.addEventListener('beforeunload',e=>{if(focusMode){e.preventDefault();e.returnValue='';}});
+document.addEventListener('fullscreenchange',()=>{if(focusMode&&!document.fullscreenElement){setFocusMode(false);toast('Focus mode ended. You can restart it whenever you’re ready.');}});
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&focusMode&&!document.querySelector('dialog[open]'))setFocusMode(false);});
 $('#global-tutor').onclick=()=>{
  if(state.route==='tutor'){$('#chat-input')?.focus();return;}
